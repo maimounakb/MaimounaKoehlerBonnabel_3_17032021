@@ -1,3 +1,118 @@
+/*POLICES*/
+
+/*SHRIKHANDRE*/
+@font-face {
+  font-family: 'shrikhandregular';
+  src: url('polices/shrikhand-regular-webfont.eot');
+  src: url('polices/shrikhand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('polices/shrikhand-regular-webfont.woff2') format('woff2'),
+       url('polices/shrikhand-regular-webfont.woff') format('woff'),
+       url('polices/shrikhand-regular-webfont.ttf') format('truetype'),
+       url('polices/shrikhand-regular-webfont.svg#shrikhandregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*ROBOTO*/
+@font-face {
+  font-family: 'robotoblack';
+  src: url('polices/roboto-black-webfont.eot');
+  src: url('polices/roboto-black-webfont.eot?#iefix') format('embedded-opentype'),
+       url('polices/roboto-black-webfont.woff2') format('woff2'),
+       url('polices/roboto-black-webfont.woff') format('woff'),
+       url('polices/roboto-black-webfont.ttf') format('truetype'),
+       url('polices/roboto-black-webfont.svg#robotoblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotobold';
+  src: url('polices/roboto-bold-webfont.eot');
+  src: url('polices/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('polices/roboto-bold-webfont.woff2') format('woff2'),
+       url('polices/roboto-bold-webfont.woff') format('woff'),
+       url('polices/roboto-bold-webfont.ttf') format('truetype'),
+       url('polices/roboto-bold-webfont.svg#robotobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotobold_condensed';
+  src: url('polices/roboto-boldcondensed-webfont.eot');
+  src: url('polices/roboto-boldcondensed-webfont.eot?#iefix') format('embedded-opentype'),
+       url('polices/roboto-boldcondensed-webfont.woff2') format('woff2'),
+       url('polices/roboto-boldcondensed-webfont.woff') format('woff'),
+       url('polices/roboto-boldcondensed-webfont.ttf') format('truetype'),
+       url('polices/roboto-boldcondensed-webfont.svg#robotobold_condensed') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotocondensed';
+  src: url('polices/roboto-condensed-webfont.eot');
+  src: url('polices/roboto-condensed-webfont.eot?#iefix') format('embedded-opentype'),
+       url('polices/roboto-condensed-webfont.woff2') format('woff2'),
+       url('polices/roboto-condensed-webfont.woff') format('woff'),
+       url('polices/roboto-condensed-webfont.ttf') format('truetype'),
+       url('polices/roboto-condensed-webfont.svg#robotocondensed') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotolight';
+  src: url('polices/roboto-light-webfont.eot');
+  src: url('polices/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('polices/roboto-light-webfont.woff2') format('woff2'),
+       url('polices/roboto-light-webfont.woff') format('woff'),
+       url('polices/roboto-light-webfont.ttf') format('truetype'),
+       url('polices/roboto-light-webfont.svg#robotolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotomedium';
+  src: url('polices/roboto-medium-webfont.eot');
+  src: url('polices/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+       url('polices/roboto-medium-webfont.woff2') format('woff2'),
+       url('polices/roboto-medium-webfont.woff') format('woff'),
+       url('polices/roboto-medium-webfont.ttf') format('truetype'),
+       url('polices/roboto-medium-webfont.svg#robotomedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url('polices/roboto-regular-webfont.eot');
+  src: url('polices/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('polices/roboto-regular-webfont.woff2') format('woff2'),
+       url('polices/roboto-regular-webfont.woff') format('woff'),
+       url('polices/roboto-regular-webfont.ttf') format('truetype'),
+       url('polices/roboto-regular-webfont.svg#robotoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotothin';
+  src: url('polices/roboto-thin-webfont.eot');
+  src: url('polices/roboto-thin-webfont.eot?#iefix') format('embedded-opentype'),
+       url('polices/roboto-thin-webfont.woff2') format('woff2'),
+       url('polices/roboto-thin-webfont.woff') format('woff'),
+       url('polices/roboto-thin-webfont.ttf') format('truetype'),
+       url('polices/roboto-thin-webfont.svg#robotothin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*ICONES*/
+
 @font-face {
   font-family: "icomoon";
   src: url("icones/icomoon.eot?4fdal5");
