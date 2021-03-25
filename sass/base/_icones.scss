@@ -1,50 +1,60 @@
 @font-face {
-    font-family: 'icomoon';
-    src:  url('/public/icones/icomoon.eot?4fdal5');
-    src:  url('/public/icones/icomoon.eot?4fdal5#iefix') format('embedded-opentype'),
-      url('/public/icones/icomoon.ttf?4fdal5') format('truetype'),
-      url('/public/icones/icomoon.woff?4fdal5') format('woff'),
-      url('/public/icones/icomoon.svg?4fdal5#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  }
-  
-  .icon-arrow-left:before {
-    content: "\e900";
-  }
-  .icon-check-circle:before {
-    content: "\e901";
-  }
-  .icon-hands-helping:before {
-    content: "\e902";
-  }
-  .icon-list-ul:before {
-    content: "\e903";
-  }
-  .icon-mobile-alt:before {
-    content: "\e904";
-  }
-  .icon-store:before {
-    content: "\e905";
-  }
-  .icon-utensils:before {
-    content: "\e906";
-  }
-  .icon-search:before {
-    content: "\72";
-  }
-  .icon-map-marker-alt:before {
-    content: "\6d";
-  }
-  
+  font-family: "icomoon";
+  src: url("/public/icones/icomoon.eot?4fdal5");
+  src: url("/public/icones/icomoon.eot?4fdal5#iefix")
+      format("embedded-opentype"),
+    url("/public/icones/icomoon.ttf?4fdal5") format("truetype"),
+    url("/public/icones/icomoon.woff?4fdal5") format("woff"),
+    url("/public/icones/icomoon.svg?4fdal5#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/*[class^="icon-"], [class*=" icon-"]*/
+
+.icon-arrow-left:before,
+.icon-check-circle:before,
+.icon-hands-helping:before,
+.icon-list-ul:before,
+.icon-mobile-alt:before,
+.icon-store:before,
+.icon-utensils:before,
+.icon-search:before,
+.icon-map-marker-alt:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+.icon-arrow-left:before {
+  content: "\e900";
+}
+.icon-check-circle:before {
+  content: "\e901";
+}
+.icon-hands-helping:before {
+  content: "\e902";
+}
+.icon-list-ul:before {
+  content: "\e903";
+}
+.icon-mobile-alt:before {
+  content: "\e904";
+}
+.icon-store:before {
+  content: "\e905";
+}
+.icon-utensils:before {
+  content: "\e906";
+}
+.icon-search:before {
+  content: "\72";
+}
+.icon-map-marker-alt:before {
+  content: "\6d";
+}

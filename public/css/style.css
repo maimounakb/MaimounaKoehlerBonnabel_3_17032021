@@ -72,7 +72,16 @@
   font-style: normal;
   font-display: block;
 }
-[class^=icon-], [class*=" icon-"] {
+/*[class^="icon-"], [class*=" icon-"]*/
+.icon-arrow-left:before,
+.icon-check-circle:before,
+.icon-hands-helping:before,
+.icon-list-ul:before,
+.icon-mobile-alt:before,
+.icon-store:before,
+.icon-utensils:before,
+.icon-search:before,
+.icon-map-marker-alt:before {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   font-style: normal;
