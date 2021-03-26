@@ -89,6 +89,7 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  margin-right: 0.5rem;
 }
 
 .icon-arrow-left:before {
@@ -130,16 +131,26 @@
 body {
   font-family: "roboto";
   background-color: #f1f1f1;
+  margin: 0rem;
+}
+
+p {
+  margin: 0rem;
 }
 
 a {
   text-decoration: none;
+  margin: 0rem;
 }
 
 ul {
-  margin: 0px;
-  padding: 0px;
+  margin: 0rem;
+  padding: 0rem;
   list-style: none;
+}
+
+.container {
+  padding: 1rem;
 }
 
 .resto-prev {
@@ -192,6 +203,61 @@ ul {
 }
 .resto-prev h3, .resto-prev p {
   margin: 0rem;
+}
+
+.f-btn {
+  height: 5rem;
+  background-color: #f1f1f1;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.f-btn a {
+  height: 5rem;
+  display: flex;
+  /*align-content: center;*/
+}
+.f-btn__number {
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: #9356DC;
+  border-radius: 1rem;
+  color: #fff;
+}
+.f-btn__icon {
+  color: grey;
+}
+.header-index {
+  text-align: center;
+}
+.header-index__logo {
+  display: flex;
+  justify-content: center;
+}
+.header-index__localisation {
+  display: flex;
+  justify-content: center;
+}
+
+.fonctionnement {
+  background-color: #fff;
+}
+
+.footer {
+  background-color: #2e2d2d;
+}
+
+.nav-footer__title {
+  font-family: "shrikhandregular";
+  font-weight: normal;
+}
+.nav-footer__title, .nav-footer__link {
+  color: #fff;
+}
+.nav-footer li {
+  margin-bottom: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

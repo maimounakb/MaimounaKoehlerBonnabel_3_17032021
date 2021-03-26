@@ -1,0 +1,15 @@
+.header-index {
+    text-align: center;
+    &__logo {
+        display: flex;
+        justify-content: center;
+    }
+    &__localisation {
+        display: flex;
+        justify-content: center;
+    }    
+}
+
+.fonctionnement {
+    background-color: $color-white;
+}

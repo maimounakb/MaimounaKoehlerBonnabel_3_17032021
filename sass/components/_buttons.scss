@@ -1,0 +1,26 @@
+.f-btn {
+  height: 5rem;
+  background-color: $color-background;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+    a {
+        height: 5rem;
+        display: flex;
+        /*align-content: center;*/
+    }
+    &__number {
+        height: 1.5rem;
+        width: 1.5rem;
+        display: flex;
+        justify-content: center;
+        background-color: $color-primary;
+        border-radius: 1rem;
+        color: $color-white;
+    }
+    &__icon {
+        color: grey;
+    }
+    &__title {
+    }
+}

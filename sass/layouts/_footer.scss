@@ -1,0 +1,16 @@
+.footer {
+    background-color: $color-footer;
+} 
+
+.nav-footer {
+    &__title {
+        font-family: 'shrikhandregular';
+        font-weight: normal;
+    }
+    &__title, &__link {
+        color: $color-white;
+    }
+    li {
+        margin-bottom: 0.5rem;
+    }
+}

@@ -1,14 +1,24 @@
 body {
     font-family: 'roboto';
     background-color: $color-background;
+    margin: 0rem;
+}
+
+p {
+    margin: 0rem;
 }
 
 a {
     text-decoration: none;
+    margin: 0rem;
 }
 
 ul {
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
     list-style: none;
   }
+
+.container {
+    padding: 1rem;
+}
