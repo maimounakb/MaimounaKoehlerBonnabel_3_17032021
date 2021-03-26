@@ -1,3 +1,14 @@
 body {
     font-family: 'roboto';
+    background-color: $color-background;
 }
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }

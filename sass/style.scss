@@ -1,4 +1,9 @@
 @import "./base/polices.scss";
 @import "./base/icones";
-@import "./untils/variables";
+@import "./untils/variables.scss";
+@import "./untils/mixins.scss";
+@import "./untils/functions.scss";
 @import "./base/body.scss";
+
+@import "./components/articles.scss";
+@import "./layouts/footer.scss";
