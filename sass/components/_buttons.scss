@@ -1,26 +1,42 @@
 .f-btn {
-  height: 5rem;
+  height: 75px;
   background-color: $color-background;
-  border-radius: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  border-radius: 20px;
+  margin-bottom: 25px;
     a {
-        height: 5rem;
+        height: 75px;
         display: flex;
         /*align-content: center;*/
     }
     &__number {
-        height: 1.5rem;
-        width: 1.5rem;
-        display: flex;
-        justify-content: center;
+        height: 25px;
+        width: 25px;
+        @include flex-center;
         background-color: $color-primary;
-        border-radius: 1rem;
+        border-radius: 20px;
         color: $color-white;
     }
     &__icon {
         color: grey;
     }
     &__title {
+    }
+}
+
+.r-btn {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    background-color: $color-white;
+    height: 69px;
+    margin: 15px;
+    &__description {
+        /*display:flex;*/
+        h3 {
+            margin: 0px;
+        }
+    }
+    &__check {
+        @include flex-center;
     }
 }

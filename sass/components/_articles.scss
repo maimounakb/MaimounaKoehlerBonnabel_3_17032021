@@ -1,10 +1,10 @@
 .resto-prev {
-    margin-top: 2rem;
-    margin-bottom: 2rem;;
+    margin-top: 20px;
+    margin-bottom: 20px;;
         a {
-        height: 15rem;
+        height: 250px;
         background: $color-white;
-        border-radius: 1rem;
+        border-radius: 10px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -19,15 +19,13 @@
             justify-content: flex-end;
         }
         &__button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 2rem;
-            width: 5rem;
-            border-radius: 0.2rem;;
+            @include flex-center;
+            height: 30px;
+            width: 80px;
+            border-radius: 3px;;
             background-color: $color-btn-new;
             color: $color-btn-new-txt;
-            margin: 1rem;
+            margin: 15px;
         }
         &--palette {
             background-image: url(/public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -44,9 +42,9 @@
         &__description {
             display: flex;
             flex-direction: column;
-            padding: 1rem;
+            padding: 15px;
         }
         h3, p {
-            margin:0rem;
+            margin:0px;
         }
 }

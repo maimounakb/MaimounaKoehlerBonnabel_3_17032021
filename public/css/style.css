@@ -150,17 +150,17 @@ ul {
 }
 
 .container {
-  padding: 1rem;
+  padding: 20px;
 }
 
 .resto-prev {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .resto-prev a {
-  height: 15rem;
+  height: 250px;
   background: #fff;
-  border-radius: 1rem;
+  border-radius: 10px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -177,12 +177,12 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 2rem;
-  width: 5rem;
-  border-radius: 0.2rem;
+  height: 30px;
+  width: 80px;
+  border-radius: 3px;
   background-color: #99e2d0;
   color: #008766;
-  margin: 1rem;
+  margin: 15px;
 }
 .resto-prev--palette {
   background-image: url(/public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -199,50 +199,98 @@ ul {
 .resto-prev__description {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 15px;
 }
 .resto-prev h3, .resto-prev p {
-  margin: 0rem;
+  margin: 0px;
 }
 
 .f-btn {
-  height: 5rem;
+  height: 75px;
   background-color: #f1f1f1;
-  border-radius: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  border-radius: 20px;
+  margin-bottom: 25px;
 }
 .f-btn a {
-  height: 5rem;
+  height: 75px;
   display: flex;
   /*align-content: center;*/
 }
 .f-btn__number {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 25px;
+  width: 25px;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #9356DC;
-  border-radius: 1rem;
+  border-radius: 20px;
   color: #fff;
 }
 .f-btn__icon {
   color: grey;
 }
+.r-btn {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  background-color: #fff;
+  height: 69px;
+  margin: 15px;
+}
+.r-btn__description {
+  /*display:flex;*/
+}
+.r-btn__description h3 {
+  margin: 0px;
+}
+.r-btn__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header-index {
   text-align: center;
 }
 .header-index__logo {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 63px;
+  box-shadow: 0px 5px 5px grey;
 }
 .header-index__localisation {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.header-index__presentation {
+  height: 287px;
+}
+.header-index__btn-explorer {
+  height: 50px;
+  width: 215px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #FF79DA;
+  color: #fff;
+}
+
+.logo {
+  height: 30px;
 }
 
 .fonctionnement {
   background-color: #fff;
+  height: 440px;
+}
+
+.header-resto__return-index {
+  display: flex;
 }
 
 .footer {
