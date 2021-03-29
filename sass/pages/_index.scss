@@ -1,33 +1,38 @@
+/*----------------------*\
+    HEADER DE L'INDEX
+\*----------------------*/
+
 .header-index {
     text-align: center;
     &__logo {
         @include flex-center;
         height: 63px;
-        box-shadow: 0px 5px 5px grey;
+        box-shadow: 0px 10px 10px black;
     }
     &__localisation {
         @include flex-center;
         height: 50px;
+        background-color: $color-background-tertiary;
+        font-weight: bold;
     }
     &__presentation {
-        height: 287px;
+        height: 237px;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }   
     &__btn-explorer {
-        height: 50px;
         width: 215px;
-        margin: auto;
-        @include flex-center;
-        border-radius: 20px;
-        background-color: $color-secondary;
-        color: $color-white;
+        @include btn-linear-gradient;
+        margin-top: 32px;
+        margin-bottom: 32px;
     } 
 }
 
-.logo {
-    height: 30px;
-}
-
+/*---------------------------*\
+    FONCTIONNEMENT 
+    POUR UTILISATEUR
+\*---------------------------*/
 .fonctionnement {
-    background-color: $color-white;
-    height: 440px;
+    background-color: $color-txt-secondary;
+    height: 400px;
 }

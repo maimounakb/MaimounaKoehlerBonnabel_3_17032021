@@ -1,42 +1,65 @@
+/*---------------------------*\
+    #BOUTONS FONCTIONNEMENT
+    (PAGE D'ACCUEIL-INDEX)
+\*---------------------------*/
+
 .f-btn {
   height: 75px;
-  background-color: $color-background;
+  background-color: $color-background-secondary;
   border-radius: 20px;
   margin-bottom: 25px;
-    a {
-        height: 75px;
-        display: flex;
-        /*align-content: center;*/
-    }
-    &__number {
-        height: 25px;
-        width: 25px;
-        @include flex-center;
-        background-color: $color-primary;
-        border-radius: 20px;
-        color: $color-white;
-    }
-    &__icon {
-        color: grey;
-    }
-    &__title {
-    }
+  a {
+    height: 75px;
+    display: flex;
+    align-items: center;
+  }
+  &__number {
+    height: 25px;
+    width: 25px;
+    @include flex-center;
+    background-color: $color-primary;
+    border-radius: 20px;
+    color: $color-txt-secondary;
+  }
+  &__icon {
+    @include flex-center;
+    color: grey;
+    font-size: large;
+  }
+  &__title {
+    @include flex-center;
+  }
 }
 
+/*------------------------------*\
+    #BOUTONS MENUS RESTAURANTS
+       (PAGES RESTAURANTS)
+\*------------------------------*/
+
 .r-btn {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 15px;
-    background-color: $color-white;
-    height: 69px;
-    margin: 15px;
-    &__description {
-        /*display:flex;*/
-        h3 {
-            margin: 0px;
-        }
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  background-color: $color-background-primary;
+  height: 69px;
+  margin: 15px;
+  &__description {
+    /*display:flex;*/
+    h3 {
+      margin: 0px;
     }
-    &__check {
-        @include flex-center;
-    }
+  }
+  &__check {
+    @include flex-center;
+  }
+}
+
+/*--------------------------------*\
+        #BOUTON "COMMANDER"
+        (PAGES RESTAURANTS)
+\*--------------------------------*/
+
+.btn-commander {
+  width: 187px;
+  @include btn-linear-gradient;
 }

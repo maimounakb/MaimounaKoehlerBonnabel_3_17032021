@@ -1,20 +1,23 @@
+/*------------------------*\
+    ARTICLE RESTAURANT
+    (Sélectionner un resto,
+    PAGE D'ACCUEIL)
+\*------------------------*/
 .resto-prev {
     margin-top: 20px;
     margin-bottom: 20px;;
         a {
         height: 250px;
-        background: $color-white;
+        background: $color-txt-secondary;
         border-radius: 10px;
         overflow: hidden;
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         box-sizing: border-box;
         }
         &__illu {
             height: 70%;
             background-size: cover;
             background-position: center;
-            
             display: flex;
             justify-content: flex-end;
         }
@@ -40,8 +43,7 @@
             background-image: url(/public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
         }
         &__description {
-            display: flex;
-            flex-direction: column;
+            @include flex-column;
             padding: 15px;
         }
         h3, p {

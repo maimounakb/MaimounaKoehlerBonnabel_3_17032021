@@ -1,0 +1,44 @@
+/*-------------*\
+    CONTENEUR
+\*-------------*/
+
+.container {
+    padding: 20px;
+}
+
+
+/*------------------*\
+    STYLE GENERAL
+\*------------------*/
+
+body {
+    font-family: 'roboto';
+    background-color: $color-background-secondary;
+    margin: 0rem;
+}
+
+h1 {
+    font-family: 'robotomedium';
+    font-size: x-large;
+}
+
+h2 {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+p {
+    margin: 0rem;
+}
+
+a {
+    color: $color-txt-primary;
+    text-decoration: none;
+    margin: 0rem;
+}
+
+ul {
+    margin: 0rem;
+    padding: 0rem;
+    list-style: none;
+  }
