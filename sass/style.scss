@@ -13,10 +13,12 @@
  * Logo.................Caractéristiques du logo.
  * Footer...............Footer commun à toues les pages.
  * Header-restos........Header des pages des restaurants.
+ * Main-restos..........Main des pages restaurants.
  *
  * COMPONENTS
  * Articles.............Liens vers les restaurants.
- * Buttons..............Différents boutons.
+ * Buttons-index........Boutons de la page d'accueil.
+ * Buttons-restos.......Boutons des pages des restaurants.
  *
  * PAGES
  * Index................Styles spécifiques à la page d'accueil.
@@ -24,14 +26,20 @@
 
 @import "./base/polices.scss";
 @import "./base/icones";
+
 @import "./untils/variables.scss";
 @import "./untils/mixins.scss";
 @import "./untils/functions.scss";
+
 @import "./base/general.scss";
 
 @import "./components/articles.scss";
-@import "./components/buttons.scss";
+@import "./components/buttons-index.scss";
+@import "./components/buttons-restos.scss";
+
 @import "./pages/index.scss";
+
 @import "./layouts/logo.scss";
 @import "./layouts/header-restos";
+@import "./layouts/main-restos.scss";
 @import "./layouts/footer.scss";

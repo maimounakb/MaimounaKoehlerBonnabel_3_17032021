@@ -14,15 +14,19 @@
  * Logo.................Caractéristiques du logo.
  * Footer...............Footer commun à toues les pages.
  * Header-restos........Header des pages des restaurants.
+ * Main-restos..........Main des pages restaurants.
  *
  * COMPONENTS
  * Articles.............Liens vers les restaurants.
- * Buttons..............Différents boutons.
+ * Buttons-index........Boutons de la page d'accueil.
+ * Buttons-restos.......Boutons des pages des restaurants.
  *
  * PAGES
  * Index................Styles spécifiques à la page d'accueil.
  */
-/*SHRIKHANDRE*/
+/*---------------------------*\
+    #POLICE SHRIKHANDRE
+\*---------------------------*/
 @font-face {
   font-family: "shrikhandregular";
   src: url("/public/polices/shrikhand-regular-webfont.eot");
@@ -30,7 +34,9 @@
   font-weight: normal;
   font-style: normal;
 }
-/*ROBOTO*/
+/*---------------------------*\
+    #POLICE ROBOTO
+\*---------------------------*/
 @font-face {
   font-family: "robotoblack";
   src: url("/public/polices/roboto-black-webfont.eot");
@@ -87,6 +93,9 @@
   font-weight: normal;
   font-style: normal;
 }
+/*----------------*\
+      #ICONES
+\*----------------*/
 @font-face {
   font-family: "icomoon";
   src: url("/public/icones/icomoon.eot?4fdal5");
@@ -105,7 +114,6 @@
 .icon-utensils:before,
 .icon-search:before,
 .icon-map-marker-alt:before {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   font-style: normal;
   font-weight: normal;
@@ -125,6 +133,7 @@
 
 .icon-hands-helping:before {
   content: "";
+  margin-left: 0px;
 }
 
 .icon-list-ul:before {
@@ -141,6 +150,7 @@
 
 .icon-utensils:before {
   content: "";
+  margin-left: 0px;
 }
 
 .icon-search:before {
@@ -151,6 +161,29 @@
   content: "m";
 }
 
+/*---------------------------*\
+    #VARIABLES COULEURS
+    IDENTITE GRAPHIQUE
+\*---------------------------*/
+/*---------------------------*\
+    #VARIABLES COULEURS
+        BACKGROUNDS
+\*---------------------------*/
+/*---------------------------*\
+    #VARIABLES COULEURS
+           TEXTES
+\*---------------------------*/
+/*---------------------------*\
+    #VARIABLES COULEURS
+    Bouton "Nouveau"
+\*---------------------------*/
+/*-------------------*\
+    #MIXINS FLEX
+\*-------------------*/
+/*-------------------*\
+    #MIXIN DEGRADE
+    POUR BOUTON
+\*-------------------*/
 /*-------------*\
     CONTENEUR
 \*-------------*/
@@ -170,11 +203,7 @@ body {
 h1 {
   font-family: "robotomedium";
   font-size: x-large;
-}
-
-h2 {
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin: 0px;
 }
 
 p {
@@ -246,7 +275,8 @@ ul {
   flex-direction: column;
   padding: 15px;
 }
-.resto-prev h3, .resto-prev p {
+.resto-prev h3,
+.resto-prev p {
   margin: 0px;
 }
 
@@ -259,9 +289,6 @@ ul {
   background-color: #f6f6f6;
   border-radius: 20px;
   margin-bottom: 25px;
-}
-.f-btn a {
-  height: 75px;
   display: flex;
   align-items: center;
 }
@@ -286,6 +313,12 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.f-btn:hover {
+  background-color: #f6f6f6;
+}
+.f-btn:hover .f-btn__icon {
+  color: #9356DC;
 }
 
 /*------------------------------*\
@@ -376,6 +409,10 @@ ul {
   background-color: white;
   height: 400px;
 }
+.fonctionnement__title {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
 
 /*------------*\
       LOGO
@@ -384,10 +421,57 @@ ul {
   height: 30px;
 }
 
+/*-------------------------*\
+    #HEADER (RESTAURANT)
+\*-------------------------*/
+.header-resto {
+  display: flex;
+  flex-direction: column;
+}
 .header-resto__return-index {
   display: flex;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-resto__presentation {
+  display: flex;
+  align-items: flex-end;
+}
+.header-resto__photo {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+.header-resto__photo--palette {
+  background-image: url(/public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+.header-resto__photo--enchantee {
+  background-image: url(/public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+.header-resto__photo--francaise {
+  background-image: url(/public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+.header-resto__photo--delice {
+  background-image: url(/public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+.header-resto__title {
+  height: 50px;
+  width: 100%;
+  border-radius: 40px 40px 0px 0px;
+  background-color: #f6f6f6;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-family: "shrikhandregular";
+  font-size: x-large;
+  font-weight: normal;
 }
 
+/*-------------*\
+    #FOOTER
+\*-------------*/
 .footer {
   background-color: #2e2d2d;
 }

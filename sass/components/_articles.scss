@@ -4,49 +4,50 @@
     PAGE D'ACCUEIL)
 \*------------------------*/
 .resto-prev {
-    margin-top: 20px;
-    margin-bottom: 20px;;
-        a {
-        height: 250px;
-        background: $color-txt-secondary;
-        border-radius: 10px;
-        overflow: hidden;
-        @include flex-column;
-        box-sizing: border-box;
-        }
-        &__illu {
-            height: 70%;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: flex-end;
-        }
-        &__button {
-            @include flex-center;
-            height: 30px;
-            width: 80px;
-            border-radius: 3px;;
-            background-color: $color-btn-new;
-            color: $color-btn-new-txt;
-            margin: 15px;
-        }
-        &--palette {
-            background-image: url(/public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-        }
-        &--enchantee {
-            background-image: url(/public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-        }
-        &--francaise {
-            background-image: url(/public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-        }
-        &--delice {
-            background-image: url(/public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-        }
-        &__description {
-            @include flex-column;
-            padding: 15px;
-        }
-        h3, p {
-            margin:0px;
-        }
+  margin-top: 20px;
+  margin-bottom: 20px;
+  a {
+    height: 250px;
+    background: $color-txt-secondary;
+    border-radius: 10px;
+    overflow: hidden;
+    @include flex-column;
+    box-sizing: border-box;
+  }
+  &__illu {
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__button {
+    @include flex-center;
+    height: 30px;
+    width: 80px;
+    border-radius: 3px;
+    background-color: $color-btn-new;
+    color: $color-btn-new-txt;
+    margin: 15px;
+  }
+  &--palette {
+    background-image: url(/public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  }
+  &--enchantee {
+    background-image: url(/public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  }
+  &--francaise {
+    background-image: url(/public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  }
+  &--delice {
+    background-image: url(/public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  }
+  &__description {
+    @include flex-column;
+    padding: 15px;
+  }
+  h3,
+  p {
+    margin: 0px;
+  }
 }

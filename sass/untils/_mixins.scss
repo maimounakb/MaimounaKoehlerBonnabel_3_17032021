@@ -1,19 +1,32 @@
+/*-------------------*\
+    #MIXINS FLEX
+\*-------------------*/
+
 @mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin flex-column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
+/*-------------------*\
+    #MIXIN DEGRADE
+    POUR BOUTON
+\*-------------------*/
+
 @mixin btn-linear-gradient {
-    height: 50px;
-    margin: auto;
-    @include flex-center;
-    border-radius: 25px;
-    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
-    color: $color-txt-secondary;
+  height: 50px;
+  margin: auto;
+  @include flex-center;
+  border-radius: 25px;
+  background: linear-gradient(
+    to bottom right,
+    $color-secondary,
+    $color-primary
+  );
+  color: $color-txt-secondary;
 }

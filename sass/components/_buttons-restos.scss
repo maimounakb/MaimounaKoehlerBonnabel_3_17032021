@@ -1,0 +1,33 @@
+/*------------------------------*\
+    #BOUTONS MENUS RESTAURANTS
+       (PAGES RESTAURANTS)
+\*------------------------------*/
+
+.r-btn {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    background-color: $color-background-primary;
+    height: 69px;
+    margin: 15px;
+    &__description {
+      /*display:flex;*/
+      h3 {
+        margin: 0px;
+      }
+    }
+    &__check {
+      @include flex-center;
+    }
+  }
+  
+  /*--------------------------------*\
+          #BOUTON "COMMANDER"
+          (PAGES RESTAURANTS)
+  \*--------------------------------*/
+  
+  .btn-commander {
+    width: 187px;
+    @include btn-linear-gradient;
+  }
+  

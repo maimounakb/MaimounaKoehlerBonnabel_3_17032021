@@ -1,3 +1,7 @@
+/*----------------*\
+      #ICONES
+\*----------------*/
+
 @font-face {
   font-family: "icomoon";
   src: url("/public/icones/icomoon.eot?4fdal5");
@@ -22,7 +26,6 @@
 .icon-utensils:before,
 .icon-search:before,
 .icon-map-marker-alt:before {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   font-style: normal;
   font-weight: normal;
@@ -40,6 +43,7 @@
 }
 .icon-hands-helping:before {
   content: "\e902";
+  margin-left: 0px;
 }
 .icon-list-ul:before {
   content: "\e903";
@@ -52,6 +56,7 @@
 }
 .icon-utensils:before {
   content: "\e906";
+  margin-left: 0px;
 }
 .icon-search:before {
   content: "\72";
