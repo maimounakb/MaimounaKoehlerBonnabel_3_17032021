@@ -18,13 +18,16 @@
   &__presentation {
     height: 237px;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 57px;
+    h1 {
+      margin: 15px;
+    }
   }
   &__btn-explorer {
     width: 215px;
     @include btn-linear-gradient;
     margin-top: 32px;
-    margin-bottom: 32px;
+    @include box-shadow;
   }
 }
 
@@ -36,7 +39,7 @@
   background-color: $color-txt-secondary;
   height: 400px;
   &__title {
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }

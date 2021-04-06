@@ -11,6 +11,7 @@
  * Fontions
  *
  * LAYOUTS
+ * Containers...........Différents conteneurs (marges réutilisées).
  * Logo.................Caractéristiques du logo.
  * Footer...............Footer commun à toues les pages.
  * Header-restos........Header des pages des restaurants.
@@ -29,67 +30,90 @@
 \*---------------------------*/
 @font-face {
   font-family: "shrikhandregular";
-  src: url("/public/polices/shrikhand-regular-webfont.eot");
-  src: url("/public/polices/shrikhand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/public/polices/shrikhand-regular-webfont.woff2") format("woff2"), url("/public/polices/shrikhand-regular-webfont.woff") format("woff"), url("/public/polices/shrikhand-regular-webfont.ttf") format("truetype"), url("/public/polices/shrikhand-regular-webfont.svg#shrikhandregular") format("svg");
+  src: url("../polices/shrikhand-regular-webfont.eot");
+  src: url("../polices/shrikhand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../polices/shrikhand-regular-webfont.woff2") format("woff2"), url("../polices/shrikhand-regular-webfont.woff") format("woff"), url("../polices/shrikhand-regular-webfont.ttf") format("truetype"), url("../polices/shrikhand-regular-webfont.svg#shrikhandregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 /*---------------------------*\
     #POLICE ROBOTO
 \*---------------------------*/
-@font-face {
-  font-family: "robotoblack";
-  src: url("/public/polices/roboto-black-webfont.eot");
-  src: url("/public/polices/roboto-black-webfont.eot?#iefix") format("embedded-opentype"), url("/public/polices/roboto-black-webfont.woff2") format("woff2"), url("/public/polices/roboto-black-webfont.woff") format("woff"), url("/public/polices/roboto-black-webfont.ttf") format("truetype"), url("/public/polices/roboto-black-webfont.svg#robotoblack") format("svg");
-  font-weight: normal;
-  font-style: normal;
+/*@font-face {
+    font-family: 'robotoblack';
+    src: url('../polices/roboto-black-webfont.eot');
+    src: url('../polices/roboto-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../polices/roboto-black-webfont.woff2') format('woff2'),
+         url('../polices/roboto-black-webfont.woff') format('woff'),
+         url('../polices/roboto-black-webfont.ttf') format('truetype'),
+         url('../polices/roboto-black-webfont.svg#robotoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
-@font-face {
-  font-family: "robotobold";
-  src: url("/public/polices/roboto-bold-webfont.eot");
-  src: url("/public/polices/roboto-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/public/polices/roboto-bold-webfont.woff2") format("woff2"), url("/public/polices/roboto-bold-webfont.woff") format("woff"), url("/public/polices/roboto-bold-webfont.ttf") format("truetype"), url("/public/polices/roboto-bold-webfont.svg#robotobold") format("svg");
-  font-weight: normal;
-  font-style: normal;
+*/
+/*@font-face {
+    font-family: 'robotobold';
+    src: url('../polices/roboto-bold-webfont.eot');
+    src: url('../polices/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../polices/roboto-bold-webfont.woff2') format('woff2'),
+         url('../polices/roboto-bold-webfont.woff') format('woff'),
+         url('../polices/roboto-bold-webfont.ttf') format('truetype'),
+         url('../polices/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
-@font-face {
-  font-family: "robotobold_condensed";
-  src: url("/public/polices/roboto-boldcondensed-webfont.eot");
-  src: url("/public/polices/roboto-boldcondensed-webfont.eot?#iefix") format("embedded-opentype"), url("/public/polices/roboto-boldcondensed-webfont.woff2") format("woff2"), url("/public/polices/roboto-boldcondensed-webfont.woff") format("woff"), url("/public/polices/roboto-boldcondensed-webfont.ttf") format("truetype"), url("/public/polices/roboto-boldcondensed-webfont.svg#robotobold_condensed") format("svg");
-  font-weight: normal;
-  font-style: normal;
+*/
+/*@font-face {
+    font-family: 'robotobold_condensed';
+    src: url('../polices/roboto-boldcondensed-webfont.eot');
+    src: url('../polices/roboto-boldcondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../polices/roboto-boldcondensed-webfont.woff2') format('woff2'),
+         url('../polices/roboto-boldcondensed-webfont.woff') format('woff'),
+         url('../polices/roboto-boldcondensed-webfont.ttf') format('truetype'),
+         url('../polices/roboto-boldcondensed-webfont.svg#robotobold_condensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/
+/*@font-face {
+    font-family: 'robotocondensed';
+    src: url('../polices/roboto-condensed-webfont.eot');
+    src: url('../polices/roboto-condensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../polices/roboto-condensed-webfont.woff2') format('woff2'),
+         url('../polices/roboto-condensed-webfont.woff') format('woff'),
+         url('../polices/roboto-condensed-webfont.ttf') format('truetype'),
+         url('../polices/roboto-condensed-webfont.svg#robotocondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
-@font-face {
-  font-family: "robotocondensed";
-  src: url("/public/polices/roboto-condensed-webfont.eot");
-  src: url("/public/polices/roboto-condensed-webfont.eot?#iefix") format("embedded-opentype"), url("/public/polices/roboto-condensed-webfont.woff2") format("woff2"), url("/public/polices/roboto-condensed-webfont.woff") format("woff"), url("/public/polices/roboto-condensed-webfont.ttf") format("truetype"), url("/public/polices/roboto-condensed-webfont.svg#robotocondensed") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "robotolight";
-  src: url("/public/polices/roboto-light-webfont.eot");
-  src: url("/public/polices/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("/public/polices/roboto-light-webfont.woff2") format("woff2"), url("/public/polices/roboto-light-webfont.woff") format("woff"), url("/public/polices/roboto-light-webfont.ttf") format("truetype"), url("/public/polices/roboto-light-webfont.svg#robotolight") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+*/
+/*@font-face {
+    font-family: 'robotolight';
+    src: url('../polices/roboto-light-webfont.eot');
+    src: url('../polices/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../polices/roboto-light-webfont.woff2') format('woff2'),
+         url('../polices/roboto-light-webfont.woff') format('woff'),
+         url('../polices/roboto-light-webfont.ttf') format('truetype'),
+         url('../polices/roboto-light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/
 @font-face {
   font-family: "robotomedium";
-  src: url("/public/polices/roboto-medium-webfont.eot");
-  src: url("/public/polices/roboto-medium-webfont.eot?#iefix") format("embedded-opentype"), url("/public/polices/roboto-medium-webfont.woff2") format("woff2"), url("/public/polices/roboto-medium-webfont.woff") format("woff"), url("/public/polices/roboto-medium-webfont.ttf") format("truetype"), url("/public/polices/roboto-medium-webfont.svg#robotomedium") format("svg");
+  src: url("../polices/roboto-medium-webfont.eot");
+  src: url("../polices/roboto-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../polices/roboto-medium-webfont.woff2") format("woff2"), url("../polices/roboto-medium-webfont.woff") format("woff"), url("../polices/roboto-medium-webfont.ttf") format("truetype"), url("../polices/roboto-medium-webfont.svg#robotomedium") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "roboto";
-  src: url("/public/polices/roboto-regular-webfont.eot");
-  src: url("/public/polices/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/public/polices/roboto-regular-webfont.woff2") format("woff2"), url("/public/polices/roboto-regular-webfont.woff") format("woff"), url("/public/polices/roboto-regular-webfont.ttf") format("truetype"), url("/public/polices/roboto-regular-webfont.svg#robotoregular") format("svg");
+  src: url("../polices/roboto-regular-webfont.eot");
+  src: url("../polices/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../polices/roboto-regular-webfont.woff2") format("woff2"), url("../polices/roboto-regular-webfont.woff") format("woff"), url("../polices/roboto-regular-webfont.ttf") format("truetype"), url("../polices/roboto-regular-webfont.svg#robotoregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "robotothin";
-  src: url("/public/polices/roboto-thin-webfont.eot");
-  src: url("/public/polices/roboto-thin-webfont.eot?#iefix") format("embedded-opentype"), url("/public/polices/roboto-thin-webfont.woff2") format("woff2"), url("/public/polices/roboto-thin-webfont.woff") format("woff"), url("/public/polices/roboto-thin-webfont.ttf") format("truetype"), url("/public/polices/roboto-thin-webfont.svg#robotothin") format("svg");
+  src: url("../polices/roboto-thin-webfont.eot");
+  src: url("../polices/roboto-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../polices/roboto-thin-webfont.woff2") format("woff2"), url("../polices/roboto-thin-webfont.woff") format("woff"), url("../polices/roboto-thin-webfont.ttf") format("truetype"), url("../polices/roboto-thin-webfont.svg#robotothin") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -98,8 +122,8 @@
 \*----------------*/
 @font-face {
   font-family: "icomoon";
-  src: url("/public/icones/icomoon.eot?4fdal5");
-  src: url("/public/icones/icomoon.eot?4fdal5#iefix") format("embedded-opentype"), url("/public/icones/icomoon.ttf?4fdal5") format("truetype"), url("/public/icones/icomoon.woff?4fdal5") format("woff"), url("/public/icones/icomoon.svg?4fdal5#icomoon") format("svg");
+  src: url("../icones/icomoon.eot?4fdal5");
+  src: url("../icones/icomoon.eot?4fdal5#iefix") format("embedded-opentype"), url("../icones/icomoon.ttf?4fdal5") format("truetype"), url("../icones/icomoon.woff?4fdal5") format("woff"), url("../icones/icomoon.svg?4fdal5#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -177,6 +201,14 @@
     #VARIABLES COULEURS
     Bouton "Nouveau"
 \*---------------------------*/
+/*---------------------------*\
+    #VARIABLES COULEURS
+          OMBRES
+\*---------------------------*/
+/*---------------------------*\
+    #VARIABLES COULEURS
+    UNDERLINE H2 RESTOS
+\*---------------------------*/
 /*-------------------*\
     #MIXINS FLEX
 \*-------------------*/
@@ -184,13 +216,10 @@
     #MIXIN DEGRADE
     POUR BOUTON
 \*-------------------*/
-/*-------------*\
-    CONTENEUR
-\*-------------*/
-.container {
-  padding: 20px;
-}
-
+/*-------------------*\
+    #MIXIN
+    BOX-SHADOW
+\*-------------------*/
 /*------------------*\
     STYLE GENERAL
 \*------------------*/
@@ -204,6 +233,10 @@ h1 {
   font-family: "robotomedium";
   font-size: x-large;
   margin: 0px;
+}
+
+h3 {
+  line-height: 100%;
 }
 
 p {
@@ -234,11 +267,12 @@ ul {
 .resto-prev a {
   height: 250px;
   background: white;
-  border-radius: 10px;
+  border-radius: 15px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  box-shadow: 5px 6px 10px #e5e5e5;
 }
 .resto-prev__illu {
   height: 70%;
@@ -247,7 +281,7 @@ ul {
   display: flex;
   justify-content: flex-end;
 }
-.resto-prev__button {
+.resto-prev__button-new {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -259,23 +293,29 @@ ul {
   margin: 15px;
 }
 .resto-prev--palette {
-  background-image: url(/public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-position: bottom;
 }
 .resto-prev--enchantee {
-  background-image: url(/public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-position: 50% 60%;
 }
 .resto-prev--francaise {
-  background-image: url(/public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-position: bottom;
 }
 .resto-prev--delice {
-  background-image: url(/public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-position: bottom;
 }
 .resto-prev__description {
   display: flex;
   flex-direction: column;
   padding: 15px;
 }
-.resto-prev h3,
+.resto-prev h3 {
+  margin: 0px 0px 5px 0px;
+}
 .resto-prev p {
   margin: 0px;
 }
@@ -289,12 +329,15 @@ ul {
   background-color: #f6f6f6;
   border-radius: 20px;
   margin-bottom: 25px;
+  margin-left: 10px;
   display: flex;
   align-items: center;
+  box-shadow: 5px 6px 10px #e5e5e5;
 }
 .f-btn__number {
   height: 25px;
   width: 25px;
+  margin-left: -10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -330,19 +373,23 @@ ul {
   justify-content: space-between;
   border-radius: 15px;
   background-color: #fff;
-  height: 69px;
-  margin: 15px;
-}
-.r-btn__description {
-  /*display:flex;*/
-}
-.r-btn__description h3 {
-  margin: 0px;
+  height: 68px;
+  margin: 15px 0px;
+  box-shadow: 5px 6px 10px #e5e5e5;
+  overflow: hidden;
 }
 .r-btn__check {
+  display: none;
+}
+.r-btn:hover .r-btn__description {
+  width: auto;
+}
+.r-btn:hover .r-btn__check {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #99E2D0;
+  color: white;
 }
 
 /*--------------------------------*\
@@ -359,6 +406,7 @@ ul {
   border-radius: 25px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
+  box-shadow: 5px 6px 10px #e5e5e5;
 }
 
 /*----------------------*\
@@ -385,7 +433,10 @@ ul {
 .header-index__presentation {
   height: 237px;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 57px;
+}
+.header-index__presentation h1 {
+  margin: 15px;
 }
 .header-index__btn-explorer {
   width: 215px;
@@ -398,7 +449,7 @@ ul {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
   margin-top: 32px;
-  margin-bottom: 32px;
+  box-shadow: 5px 6px 10px #e5e5e5;
 }
 
 /*---------------------------*\
@@ -410,8 +461,26 @@ ul {
   height: 400px;
 }
 .fonctionnement__title {
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/*--------------*\
+    CONTENEURS
+\*--------------*/
+.container-index {
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+.container-footer {
+  padding: 25px;
+}
+
+.container-resto {
+  margin-top: -50px;
+  padding: 40px 10px 65px 10px;
+  border-radius: 40px 40px 0px 0px;
 }
 
 /*------------*\
@@ -445,28 +514,78 @@ ul {
   background-position: center;
 }
 .header-resto__photo--palette {
-  background-image: url(/public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
 }
 .header-resto__photo--enchantee {
-  background-image: url(/public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
 }
 .header-resto__photo--francaise {
-  background-image: url(/public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
 }
 .header-resto__photo--delice {
-  background-image: url(/public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
 }
-.header-resto__title {
-  height: 50px;
-  width: 100%;
-  border-radius: 40px 40px 0px 0px;
+
+/*--------------*\
+     TITRE H1
+  (NOM DU RESTO)
+\*--------------*/
+.title-resto {
   background-color: #f6f6f6;
-  padding-top: 40px;
-  padding-right: 20px;
-  padding-left: 20px;
+  margin: 0px 10px;
   font-family: "shrikhandregular";
   font-size: x-large;
   font-weight: normal;
+}
+
+/*-----------------*\
+      TITRE H2
+  (ETAPES DU REPAS)
+\*-----------------*/
+.title-plats {
+  margin-left: 7px;
+}
+.title-plats h2 {
+  font-family: "robotothin";
+  font-size: medium;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.title-plats__underline {
+  height: 3px;
+  width: 40px;
+  background-color: #99e2d0;
+}
+
+/*------------------*\
+      SECTIONS 
+   (ETAPES DU REPAS)
+\*------------------*/
+.carte-resto {
+  margin-bottom: 36px;
+}
+
+/*---------------*\
+  LES DIFFERENTS 
+   PLATS DU MENU
+\*---------------*/
+.plat-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 10px;
+}
+.plat-description h3 {
+  margin: 0px;
+  font-size: medium;
+}
+.plat-description p {
+  font-size: small;
+}
+.plat-description__subtext {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*-------------*\

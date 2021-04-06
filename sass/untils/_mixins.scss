@@ -30,3 +30,12 @@
   );
   color: $color-txt-secondary;
 }
+
+/*-------------------*\
+    #MIXIN
+    BOX-SHADOW
+\*-------------------*/
+
+@mixin box-shadow {
+  box-shadow: 5px 6px 10px $color-shadow;
+}

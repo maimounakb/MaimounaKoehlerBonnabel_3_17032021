@@ -8,11 +8,14 @@
   background-color: $color-background-secondary;
   border-radius: 20px;
   margin-bottom: 25px;
+  margin-left: 10px;
   display: flex;
   align-items: center;
+  @include box-shadow;
   &__number {
     height: 25px;
     width: 25px;
+    margin-left: -10px;
     @include flex-center;
     background-color: $color-primary;
     border-radius: 20px;

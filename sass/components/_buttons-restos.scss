@@ -8,19 +8,26 @@
     justify-content: space-between;
     border-radius: 15px;
     background-color: $color-background-primary;
-    height: 69px;
-    margin: 15px;
-    &__description {
-      /*display:flex;*/
-      h3 {
-        margin: 0px;
+    height: 68px;
+    margin: 15px 0px;
+    @include box-shadow;
+    overflow: hidden;
+   
+    &__check {
+      display: none;
+    }
+    &:hover {
+      .r-btn__description {
+        width: auto;
+      }
+      .r-btn__check{
+        @include flex-center;
+        background-color: $color-tertiary;
+        color: $color-txt-secondary;
       }
     }
-    &__check {
-      @include flex-center;
-    }
   }
-  
+
   /*--------------------------------*\
           #BOUTON "COMMANDER"
           (PAGES RESTAURANTS)
@@ -29,5 +36,6 @@
   .btn-commander {
     width: 187px;
     @include btn-linear-gradient;
+    @include box-shadow;
   }
   

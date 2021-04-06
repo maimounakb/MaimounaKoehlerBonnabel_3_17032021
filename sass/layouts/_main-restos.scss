@@ -1,0 +1,31 @@
+/*------------------*\
+      SECTIONS 
+   (ETAPES DU REPAS)
+\*------------------*/
+
+.carte-resto {
+  margin-bottom: 36px;
+}
+
+/*---------------*\
+  LES DIFFERENTS 
+   PLATS DU MENU
+\*---------------*/
+
+.plat-description {
+  @include flex-column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 10px;
+  h3 {
+    margin: 0px;
+    font-size: medium;
+  }
+  p {
+    font-size: small;
+  }
+  &__subtext {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -10,6 +10,7 @@
  * Fontions
  *
  * LAYOUTS
+ * Containers...........Différents conteneurs (marges réutilisées).
  * Logo.................Caractéristiques du logo.
  * Footer...............Footer commun à toues les pages.
  * Header-restos........Header des pages des restaurants.
@@ -39,7 +40,9 @@
 
 @import "./pages/index.scss";
 
+@import "./layouts/containers.scss";
 @import "./layouts/logo.scss";
-@import "./layouts/header-restos";
+@import "./layouts/header-restos.scss";
+@import "./layouts/titles-resto.scss";
 @import "./layouts/main-restos.scss";
 @import "./layouts/footer.scss";

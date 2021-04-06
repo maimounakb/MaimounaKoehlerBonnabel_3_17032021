@@ -1,11 +1,3 @@
-/*-------------*\
-    CONTENEUR
-\*-------------*/
-
-.container {
-  padding: 20px;
-}
-
 /*------------------*\
     STYLE GENERAL
 \*------------------*/
@@ -20,6 +12,10 @@ h1 {
   font-family: "robotomedium";
   font-size: x-large;
   margin: 0px;
+}
+
+h3 {
+  line-height: 100%;
 }
 
 p {
