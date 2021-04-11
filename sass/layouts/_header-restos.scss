@@ -13,7 +13,7 @@
     align-items: flex-end;
   }
   &__photo {
-    height: 300px;
+    height: 270px;
     background-size: cover;
     background-position: center;
     &--palette {
@@ -29,4 +29,16 @@
       background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
     }
   }
+}
+
+/*
+.icon-arrow-left {
+  
+}
+*/
+
+.logo--resto {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 44px;
 }

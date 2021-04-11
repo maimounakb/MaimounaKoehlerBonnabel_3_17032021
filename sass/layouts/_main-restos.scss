@@ -4,7 +4,7 @@
 \*------------------*/
 
 .carte-resto {
-  margin-bottom: 36px;
+  margin-bottom: 35px;
 }
 
 /*---------------*\
@@ -15,17 +15,17 @@
 .plat-description {
   @include flex-column;
   justify-content: space-between;
-  width: 100%;
-  padding: 15px 10px;
+  padding: 15px 0px 13px 10px;
+  overflow: hidden;
+  flex-wrap: nowrap;
   h3 {
     margin: 0px;
+    margin-bottom: 3px;
     font-size: medium;
+    /*height: 45%;*/
   }
   p {
     font-size: small;
-  }
-  &__subtext {
-    display: flex;
-    justify-content: space-between;
+    /*height: 45%;*/
   }
 }

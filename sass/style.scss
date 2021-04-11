@@ -2,34 +2,37 @@
  * TABLE DES MATIERES
  *
  * BASE
- * General..............Styles du body, H1, a, ul.
+ * General................Styles du body, H1, a, ul.
  *
  * UNTILS
- * Variables............Variables des couleurs.
- * Mixins...............Mixins utiles.
+ * Variables..............Variables des couleurs.
+ * Mixins.................Mixins utiles.
+ * Mixins-media-queries...Mixins pour les media queries.
  * Fontions
  *
  * LAYOUTS
- * Containers...........Différents conteneurs (marges réutilisées).
- * Logo.................Caractéristiques du logo.
- * Footer...............Footer commun à toues les pages.
- * Header-restos........Header des pages des restaurants.
- * Main-restos..........Main des pages restaurants.
+ * Containers.............Différents conteneurs (marges réutilisées).
+ * Logo...................Caractéristiques du logo.
+ * Footer.................Footer commun à toues les pages.
+ * Header-restos..........Header des pages des restaurants.
+ * Title-resto............Titres des pages restaurants.
+ * Main-restos............Main des pages restaurants.
  *
  * COMPONENTS
- * Articles.............Liens vers les restaurants.
- * Buttons-index........Boutons de la page d'accueil.
- * Buttons-restos.......Boutons des pages des restaurants.
+ * Articles...............Liens vers les restaurants.
+ * Buttons-index..........Boutons de la page d'accueil.
+ * Buttons-restos.........Boutons des pages des restaurants.
  *
  * PAGES
- * Index................Styles spécifiques à la page d'accueil.
+ * Index..................Styles spécifiques à la page d'accueil.
  */
 
 @import "./base/polices.scss";
-@import "./base/icones";
+@import "./base/icones.scss";
 
 @import "./untils/variables.scss";
 @import "./untils/mixins.scss";
+@import "./untils/mixins-media-queries.scss";
 @import "./untils/functions.scss";
 
 @import "./base/general.scss";

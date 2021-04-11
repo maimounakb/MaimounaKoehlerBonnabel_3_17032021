@@ -3,27 +3,29 @@
  * TABLE DES MATIERES
  *
  * BASE
- * General..............Styles du body, H1, a, ul.
+ * General................Styles du body, H1, a, ul.
  *
  * UNTILS
- * Variables............Variables des couleurs.
- * Mixins...............Mixins utiles.
+ * Variables..............Variables des couleurs.
+ * Mixins.................Mixins utiles.
+ * Mixins-media-queries...Mixins pour les media queries.
  * Fontions
  *
  * LAYOUTS
- * Containers...........Différents conteneurs (marges réutilisées).
- * Logo.................Caractéristiques du logo.
- * Footer...............Footer commun à toues les pages.
- * Header-restos........Header des pages des restaurants.
- * Main-restos..........Main des pages restaurants.
+ * Containers.............Différents conteneurs (marges réutilisées).
+ * Logo...................Caractéristiques du logo.
+ * Footer.................Footer commun à toues les pages.
+ * Header-restos..........Header des pages des restaurants.
+ * Title-resto............Titres des pages restaurants.
+ * Main-restos............Main des pages restaurants.
  *
  * COMPONENTS
- * Articles.............Liens vers les restaurants.
- * Buttons-index........Boutons de la page d'accueil.
- * Buttons-restos.......Boutons des pages des restaurants.
+ * Articles...............Liens vers les restaurants.
+ * Buttons-index..........Boutons de la page d'accueil.
+ * Buttons-restos.........Boutons des pages des restaurants.
  *
  * PAGES
- * Index................Styles spécifiques à la page d'accueil.
+ * Index..................Styles spécifiques à la page d'accueil.
  */
 /*---------------------------*\
     #POLICE SHRIKHANDRE
@@ -220,6 +222,10 @@
     #MIXIN
     BOX-SHADOW
 \*-------------------*/
+/*--------------------------*\
+      #MIXIN BACKGROUND
+  (btn fonctionnement, index)
+\*---------------------------*/
 /*------------------*\
     STYLE GENERAL
 \*------------------*/
@@ -261,8 +267,8 @@ ul {
     PAGE D'ACCUEIL)
 \*------------------------*/
 .resto-prev {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  width: 100%;
 }
 .resto-prev a {
   height: 250px;
@@ -319,6 +325,23 @@ ul {
 .resto-prev p {
   margin: 0px;
 }
+@media screen and (min-width: 500px) {
+  .resto-prev {
+    /*min-width: 335px;*/
+    max-width: 500px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .resto-prev {
+    min-width: 335px;
+    width: 48%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .resto-prev {
+    width: 30%;
+  }
+}
 
 /*---------------------------*\
     #BOUTONS FONCTIONNEMENT
@@ -358,44 +381,98 @@ ul {
   align-items: center;
 }
 .f-btn:hover {
-  background-color: #f6f6f6;
+  background-color: #f2eafb;
 }
 .f-btn:hover .f-btn__icon {
   color: #9356DC;
+}
+@media screen and (min-width: 500px) {
+  .f-btn {
+    min-width: 350px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .f-btn {
+    margin-left: 20px;
+  }
 }
 
 /*------------------------------*\
     #BOUTONS MENUS RESTAURANTS
        (PAGES RESTAURANTS)
 \*------------------------------*/
+.icon-check-circle:before {
+  color: white;
+  font-size: large;
+}
+
 .r-btn {
   display: flex;
-  justify-content: space-between;
   border-radius: 15px;
   background-color: #fff;
-  height: 68px;
-  margin: 15px 0px;
+  /*height: 68px;*/
+  margin: 15px 4px;
   box-shadow: 5px 6px 10px #e5e5e5;
   overflow: hidden;
 }
+.r-btn__description {
+  overflow: hidden;
+  width: 100%;
+  /*background-color: yellow;*/
+}
+.r-btn__points {
+  display: flex;
+  align-items: flex-end;
+  padding: 15px 10px 15px 0px;
+  transform: scale(0, 1);
+  transition: transform 400ms;
+}
+.r-btn__price {
+  font-size: small;
+  padding: 15px 10px 15px 10px;
+  display: flex;
+  align-items: flex-end;
+  /*position: relative;*/
+  font-weight: bold;
+  transform: translateX(30px);
+  transition: transform 400ms;
+}
 .r-btn__check {
-  display: none;
-}
-.r-btn:hover .r-btn__description {
-  width: auto;
-}
-.r-btn:hover .r-btn__check {
+  /*position: relative;*/
+  background-color: #99E2D0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #99E2D0;
-  color: white;
+  transform-origin: right;
+  transform: scale(0, 1);
+  transition: all 400ms;
+}
+.r-btn :hover .icon-check-circle:before {
+  /*Faire tourner*/
+}
+.r-btn:hover {
+  /*.r-btn__description {
+  }*/
+  /*.icon-check-circle {
+      Faire tourner
+    }*/
+}
+.r-btn:hover .r-btn__points {
+  transform: scale(1, 1);
+}
+.r-btn:hover .r-btn__price {
+  transform: translateX(0);
+}
+.r-btn:hover .r-btn__check {
+  padding: 5px;
+  transform-origin: right;
+  transform: scale(1, 1);
 }
 
 /*--------------------------------*\
-        #BOUTON "COMMANDER"
-        (PAGES RESTAURANTS)
-\*--------------------------------*/
+          #BOUTON "COMMANDER"
+          (PAGES RESTAURANTS)
+  \*--------------------------------*/
 .btn-commander {
   width: 187px;
   height: 50px;
@@ -416,11 +493,12 @@ ul {
   text-align: center;
 }
 .header-index__logo {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 63px;
-  box-shadow: 0px 10px 10px black;
+  box-shadow: 0px 3px 3px grey;
 }
 .header-index__localisation {
   display: flex;
@@ -430,9 +508,11 @@ ul {
   background-color: #eaeaea;
   font-weight: bold;
 }
+.header-index__localisation p {
+  padding-right: 42px;
+}
 .header-index__presentation {
-  height: 237px;
-  padding-top: 25px;
+  padding-top: 20px;
   padding-bottom: 57px;
 }
 .header-index__presentation h1 {
@@ -458,11 +538,47 @@ ul {
 \*---------------------------*/
 .fonctionnement {
   background-color: white;
-  height: 400px;
 }
 .fonctionnement__title {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 500px) {
+  .fonctionnement__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 800px) {
+  .fonctionnement__buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+/*---------------------------*\
+    ARTICLES RESTAURANTS
+      (organisation)
+\*---------------------------*/
+.restaurants h2 {
+  margin-top: 35px;
+  margin-bottom: 27px;
+  line-height: 100%;
+}
+.restaurants__articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 800px) {
+  .restaurants__articles {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 /*--------------*\
@@ -470,7 +586,7 @@ ul {
 \*--------------*/
 .container-index {
   padding: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 46px;
 }
 
 .container-footer {
@@ -478,9 +594,18 @@ ul {
 }
 
 .container-resto {
+  position: relative;
+  background-color: #f6f6f6;
   margin-top: -50px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 40px 10px 65px 10px;
   border-radius: 40px 40px 0px 0px;
+}
+@media screen and (min-width: 500px) {
+  .container-resto {
+    max-width: 1000px;
+  }
 }
 
 /*------------*\
@@ -509,7 +634,7 @@ ul {
   align-items: flex-end;
 }
 .header-resto__photo {
-  height: 300px;
+  height: 270px;
   background-size: cover;
   background-position: center;
 }
@@ -526,13 +651,24 @@ ul {
   background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
 }
 
+/*
+.icon-arrow-left {
+
+}
+*/
+.logo--resto {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 44px;
+}
+
 /*--------------*\
      TITRE H1
   (NOM DU RESTO)
 \*--------------*/
 .title-resto {
   background-color: #f6f6f6;
-  margin: 0px 10px;
+  margin: 0px 0px 45px 10px;
   font-family: "shrikhandregular";
   font-size: x-large;
   font-weight: normal;
@@ -543,7 +679,7 @@ ul {
   (ETAPES DU REPAS)
 \*-----------------*/
 .title-plats {
-  margin-left: 7px;
+  margin-left: 10px;
 }
 .title-plats h2 {
   font-family: "robotothin";
@@ -562,7 +698,7 @@ ul {
    (ETAPES DU REPAS)
 \*------------------*/
 .carte-resto {
-  margin-bottom: 36px;
+  margin-bottom: 35px;
 }
 
 /*---------------*\
@@ -573,19 +709,19 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
-  padding: 15px 10px;
+  padding: 15px 0px 13px 10px;
+  overflow: hidden;
+  flex-wrap: nowrap;
 }
 .plat-description h3 {
   margin: 0px;
+  margin-bottom: 3px;
   font-size: medium;
+  /*height: 45%;*/
 }
 .plat-description p {
   font-size: small;
-}
-.plat-description__subtext {
-  display: flex;
-  justify-content: space-between;
+  /*height: 45%;*/
 }
 
 /*-------------*\

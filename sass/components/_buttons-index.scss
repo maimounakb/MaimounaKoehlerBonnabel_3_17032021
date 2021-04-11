@@ -30,9 +30,16 @@
     @include flex-center;
   }
   &:hover {
-    background-color: $color-background-secondary;
+    @include background-fonctionnement;
     .f-btn__icon {
       color: $color-primary;
     }
+  }
+@include first-breakpoint {
+  min-width: 350px;
+}
+
+  @include second-breakpoint {
+    margin-left: 20px;
   }
 }

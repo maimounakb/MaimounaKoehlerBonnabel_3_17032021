@@ -4,8 +4,8 @@
     PAGE D'ACCUEIL)
 \*------------------------*/
 .resto-prev {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  width: 100%;
   a {
     height: 250px;
     background: $color-txt-secondary;
@@ -56,5 +56,19 @@
   }
   p {
     margin: 0px;
+  }
+
+  @include first-breakpoint {
+    /*min-width: 335px;*/
+    max-width: 500px;
+  }
+
+  @include second-breakpoint {
+    min-width: 335px;
+    width: 48%;
+  }
+
+  @include third-breakpoint {
+    width: 30%;
   }
 }
