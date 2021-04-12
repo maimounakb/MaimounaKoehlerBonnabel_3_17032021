@@ -17,15 +17,18 @@
   justify-content: space-between;
   padding: 15px 0px 13px 10px;
   overflow: hidden;
-  flex-wrap: nowrap;
   h3 {
     margin: 0px;
     margin-bottom: 3px;
     font-size: medium;
-    /*height: 45%;*/
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space:nowrap;
   }
   p {
     font-size: small;
-    /*height: 45%;*/
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space:nowrap;
   }
 }

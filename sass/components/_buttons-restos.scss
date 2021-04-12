@@ -23,14 +23,6 @@
     /*background-color: yellow;*/
   }
 
-  &__points {
-    display: flex;
-    align-items: flex-end;
-    padding: 15px 10px 15px 0px;
-    transform: scale(0, 1);
-    transition: transform 400ms;
-  }
-
   &__price {
     font-size: small;
     padding: 15px 10px 15px 10px;
@@ -51,16 +43,9 @@
     transition: all 400ms;
   }
 
-  :hover .icon-check-circle:before {
-    /*Faire tourner*/
-  }
-
   &:hover {
     /*.r-btn__description {
     }*/
-    .r-btn__points {
-      transform: scale(1,1);
-    }
     .r-btn__price {
       transform:translateX(0);
     }
@@ -69,7 +54,7 @@
       transform-origin: right;
       transform: scale(1, 1);
     }
-    /*.icon-check-circle {
+    /*.icon-check-circle:before {
         Faire tourner
       }*/
   }

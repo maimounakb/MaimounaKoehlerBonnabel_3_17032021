@@ -241,8 +241,8 @@ h1 {
   margin: 0px;
 }
 
-h3 {
-  line-height: 100%;
+h3::first-letter, p::first-letter {
+  text-transform: uppercase;
 }
 
 p {
@@ -420,13 +420,6 @@ ul {
   width: 100%;
   /*background-color: yellow;*/
 }
-.r-btn__points {
-  display: flex;
-  align-items: flex-end;
-  padding: 15px 10px 15px 0px;
-  transform: scale(0, 1);
-  transition: transform 400ms;
-}
 .r-btn__price {
   font-size: small;
   padding: 15px 10px 15px 10px;
@@ -447,18 +440,12 @@ ul {
   transform: scale(0, 1);
   transition: all 400ms;
 }
-.r-btn :hover .icon-check-circle:before {
-  /*Faire tourner*/
-}
 .r-btn:hover {
   /*.r-btn__description {
   }*/
-  /*.icon-check-circle {
+  /*.icon-check-circle:before {
       Faire tourner
     }*/
-}
-.r-btn:hover .r-btn__points {
-  transform: scale(1, 1);
 }
 .r-btn:hover .r-btn__price {
   transform: translateX(0);
@@ -512,8 +499,7 @@ ul {
   padding-right: 42px;
 }
 .header-index__presentation {
-  padding-top: 20px;
-  padding-bottom: 57px;
+  padding: 20px 19px 57px 19px;
 }
 .header-index__presentation h1 {
   margin: 15px;
@@ -711,17 +697,20 @@ ul {
   justify-content: space-between;
   padding: 15px 0px 13px 10px;
   overflow: hidden;
-  flex-wrap: nowrap;
 }
 .plat-description h3 {
   margin: 0px;
   margin-bottom: 3px;
   font-size: medium;
-  /*height: 45%;*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .plat-description p {
   font-size: small;
-  /*height: 45%;*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /*-------------*\
