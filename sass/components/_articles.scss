@@ -48,7 +48,7 @@
     background-position: bottom;
   }
   &__description {
-    padding: 15px;
+    padding: 15px 20px 15px 15px;
   }
   h3 {
     margin: 0px 0px 5px 0px;
@@ -80,7 +80,6 @@
 \*----------------------*/
 
 .resto-description {
-
   display: flex;
   justify-content: space-between;
 
@@ -89,5 +88,33 @@
   }
   &__like {
     @include flex-center;
+    font-size: large;
+    color: $color-txt-secondary;
+  }
+}
+
+
+/*----------------*\
+     ANIMATION 
+    BOUTON LIKE
+\*----------------*/
+
+.icon-heart-full {
+  font-size: 1.2rem;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  transform: scale(1);
+  transition: all 400ms;
+
+  &:hover {
+    transform: scale(1.02);
+    /*font-size: 1.3rem;*/
+    text-shadow: none;
+    @include background-gradient;
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
   }
 }

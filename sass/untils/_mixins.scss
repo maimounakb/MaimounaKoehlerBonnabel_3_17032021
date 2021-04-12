@@ -14,8 +14,21 @@
 }
 
 /*-------------------*\
-    #MIXIN DEGRADE
-    POUR BOUTON
+    #MIXIN BACKGROUND
+        DEGRADE
+\*-------------------*/
+
+@mixin background-gradient {
+  background: linear-gradient(
+    to bottom right,
+    $color-secondary,
+    $color-primary
+  );
+}
+
+/*-------------------*\
+    #MIXIN BOUTON
+    (avec dégradé)
 \*-------------------*/
 
 @mixin btn-linear-gradient {
@@ -23,13 +36,10 @@
   margin: auto;
   @include flex-center;
   border-radius: 25px;
-  background: linear-gradient(
-    to bottom right,
-    $color-secondary,
-    $color-primary
-  );
+  @include background-gradient;
   color: $color-txt-secondary;
 }
+
 
 /*-------------------*\
     #MIXIN
