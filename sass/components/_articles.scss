@@ -48,7 +48,6 @@
     background-position: bottom;
   }
   &__description {
-    @include flex-column;
     padding: 15px;
   }
   h3 {
@@ -70,5 +69,25 @@
 
   @include third-breakpoint {
     width: 30%;
+  }
+}
+
+
+/*----------------------*\
+      DESCRIPTIONS 
+    DES RESTAURANTS
+       (ACCUEIL)
+\*----------------------*/
+
+.resto-description {
+
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    @include flex-column;
+  }
+  &__like {
+    @include flex-center;
   }
 }

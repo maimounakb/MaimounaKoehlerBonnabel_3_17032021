@@ -1,6 +1,86 @@
 /*----------------*\
       #ICONES
 \*----------------*/
+@font-face {
+  font-family: 'icones';
+  src:  url('../icones/icones.eot?7ck4i7');
+  src:  url('../icones/icones.eot?7ck4i7#iefix') format('embedded-opentype'),
+    url('../icones/icones.ttf?7ck4i7') format('truetype'),
+    url('../icones/icones.woff?7ck4i7') format('woff'),
+    url('../icones/icones.svg?7ck4i7#icones') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/*[class^="icon-"], [class*=" icon-"]*/
+
+.icon-clicker:before,
+.icon-heart-empty:before,
+.icon-heart-full:before,
+.icon-spinner:before,
+.icon-arrow-left:before,
+.icon-check-circle:before,
+.icon-hands-helping:before,
+.icon-list-ul:before,
+.icon-mobile-alt:before,
+.icon-store:before,
+.icon-utensils:before,
+.icon-search:before,
+.icon-map-marker-alt:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icones' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  margin: 15px;
+}
+
+.icon-clicker:before {
+  content: "\e907";
+}
+.icon-heart-empty:before {
+  content: "\e908";
+}
+.icon-heart-full:before {
+  content: "\e909";
+}
+.icon-spinner:before {
+  content: "\e90a";
+}
+.icon-arrow-left:before {
+  content: "\e900";
+}
+.icon-check-circle:before {
+  content: "\e901";
+}
+.icon-hands-helping:before {
+  margin-left: 0px;
+  content: "\e902";
+}
+.icon-list-ul:before {
+  content: "\e903";
+}
+.icon-mobile-alt:before {
+  content: "\e904";
+}
+.icon-store:before {
+  content: "\e905";
+}
+
+.icon-utensils:before {
+  content: "\e906";
+  margin-left: 0px;
+}
+.icon-search:before {
+  content: "\72";
+}
+.icon-map-marker-alt:before {
+  content: "\6d";
+}
+
 
 @font-face {
   font-family: "icomoon";
@@ -16,7 +96,7 @@
 }
 
 /*[class^="icon-"], [class*=" icon-"]*/
-
+/*
 .icon-arrow-left:before,
 .icon-check-circle:before,
 .icon-hands-helping:before,
@@ -34,7 +114,7 @@
   line-height: 1;
   margin: 15px;
 }
-
+/*
 .icon-arrow-left:before {
   content: "\e900";
 }
@@ -64,3 +144,4 @@
 .icon-map-marker-alt:before {
   content: "\6d";
 }
+*/

@@ -4,11 +4,15 @@
 \*--------------*/
 
 .title-resto {
+  display: flex;
+  justify-content: space-between;
   background-color: $color-background-secondary;
   margin: 0px 0px 45px 10px;
-  font-family: "shrikhandregular";
-  font-size: x-large;
-  font-weight: normal;
+  &__title {
+    font-family: "shrikhandregular";
+    font-size: x-large;
+    font-weight: normal;
+  }
 }
 
 /*-----------------*\
