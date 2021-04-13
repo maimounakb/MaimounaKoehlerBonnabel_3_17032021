@@ -43,14 +43,12 @@
     padding: 15px 10px 15px 10px;
     display: flex;
     align-items: flex-end;
-    /*position: relative;*/
     font-weight: bold;
     transform: translateX(30px);
     transition: transform 400ms;
   }
 
   &__check {
-    /*position: relative;*/
     background-color: $color-tertiary;
     @include flex-center;
     transform-origin: right;
@@ -58,9 +56,13 @@
     transition: all 400ms;
   }
 
+  .icon-check-circle:before {
+    transform: rotate(0deg);
+    transition: all 400ms;
+  }
+
   &:hover, &:active {
-    /*.r-btn__description {
-    }*/
+
     .r-btn__price {
       transform:translateX(0);
     }
@@ -69,9 +71,9 @@
       transform-origin: right;
       transform: scale(1, 1);
     }
-    /*.icon-check-circle:before {
-        Faire tourner
-      }*/
+    .icon-check-circle:before {
+        transform: rotate(2turn);
+      }
   }
 }
 

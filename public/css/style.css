@@ -613,13 +613,11 @@ ul {
   padding: 15px 10px 15px 10px;
   display: flex;
   align-items: flex-end;
-  /*position: relative;*/
   font-weight: bold;
   transform: translateX(30px);
   transition: transform 400ms;
 }
 .r-btn__check {
-  /*position: relative;*/
   background-color: #99E2D0;
   display: flex;
   justify-content: center;
@@ -628,12 +626,9 @@ ul {
   transform: scale(0, 1);
   transition: all 400ms;
 }
-.r-btn:hover, .r-btn:active {
-  /*.r-btn__description {
-  }*/
-  /*.icon-check-circle:before {
-      Faire tourner
-    }*/
+.r-btn .icon-check-circle:before {
+  transform: rotate(0deg);
+  transition: all 400ms;
 }
 .r-btn:hover .r-btn__price, .r-btn:active .r-btn__price {
   transform: translateX(0);
@@ -642,6 +637,9 @@ ul {
   padding: 5px;
   transform-origin: right;
   transform: scale(1, 1);
+}
+.r-btn:hover .icon-check-circle:before, .r-btn:active .icon-check-circle:before {
+  transform: rotate(2turn);
 }
 
 /*-----------------------------*\
@@ -738,6 +736,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 42px;
   height: 50px;
   background-color: #eaeaea;
   font-weight: bold;
@@ -819,6 +818,7 @@ ul {
    LOCALISATION
 \*--------------*/
 input {
+  position: relative;
   border: none;
   background-color: #eaeaea;
   font-family: "roboto";
@@ -827,7 +827,6 @@ input {
   color: black;
   height: auto;
   max-width: 7rem;
-  padding-right: 42px;
 }
 
 /*--------------*\
