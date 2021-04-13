@@ -427,11 +427,7 @@ ul {
   .resto-prev {
     min-width: 335px;
     width: 48%;
-  }
-}
-@media screen and (min-width: 1100px) {
-  .resto-prev {
-    width: 30%;
+    max-width: none;
   }
 }
 
@@ -533,6 +529,12 @@ ul {
 @media screen and (min-width: 800px) {
   .f-btn {
     margin-left: 20px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .f-btn {
+    min-width: 300px;
+    margin-left: 30px;
   }
 }
 
@@ -715,6 +717,11 @@ ul {
 .header-index__presentation h1 {
   margin: 15px;
 }
+@media screen and (min-width: 800px) {
+  .header-index__presentation h1 {
+    font-size: xx-large;
+  }
+}
 .header-index__btn-explorer {
   width: 215px;
   height: 50px;
@@ -756,6 +763,14 @@ input {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 800px) {
+  .fonctionnement__title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 500px) {
   .fonctionnement__buttons {
     display: flex;
@@ -764,11 +779,10 @@ input {
     flex-direction: column;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1050px) {
   .fonctionnement__buttons {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
   }
 }
 
@@ -780,6 +794,16 @@ input {
   margin-top: 35px;
   margin-bottom: 27px;
   line-height: 100%;
+  /*
+  @include first-breakpoint{
+    margin-left: 50px;
+  }*/
+}
+@media screen and (min-width: 800px) {
+  .restaurants h2 {
+    /*margin-left: 0px;*/
+    font-size: 1.8rem;
+  }
 }
 .restaurants__articles {
   display: flex;
@@ -797,6 +821,12 @@ input {
 /*--------------*\
     CONTENEURS
 \*--------------*/
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .container-index {
   padding: 20px;
   padding-bottom: 46px;
@@ -810,15 +840,8 @@ input {
   position: relative;
   background-color: #f6f6f6;
   margin-top: -50px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 40px 10px 65px 10px;
   border-radius: 40px 40px 0px 0px;
-}
-@media screen and (min-width: 500px) {
-  .container-resto {
-    max-width: 1000px;
-  }
 }
 
 /*------------*\
@@ -992,7 +1015,7 @@ input {
 }
 @media screen and (min-width: 500px) {
   .nav-footer {
-    max-width: 1000px;
+    max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
   }

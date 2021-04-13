@@ -65,10 +65,7 @@
   @include second-breakpoint {
     min-width: 335px;
     width: 48%;
-  }
-
-  @include third-breakpoint {
-    width: 30%;
+    max-width: none;
   }
 }
 

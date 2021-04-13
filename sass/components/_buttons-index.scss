@@ -35,11 +35,18 @@
       color: $color-primary;
     }
   }
-@include first-breakpoint {
-  min-width: 350px;
-}
 
+  @include first-breakpoint {
+    min-width: 350px;
+  }
+  
   @include second-breakpoint {
     margin-left: 20px;
   }
+
+  @include third-breakpoint {
+    min-width: 300px;
+    margin-left: 30px;
+  }
+  
 }
