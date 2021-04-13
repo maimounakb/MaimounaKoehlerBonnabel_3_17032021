@@ -181,6 +181,7 @@
 
 .icon-hands-helping:before {
   margin-left: 0px;
+  margin-right: 8px;
   content: "";
 }
 
@@ -451,9 +452,9 @@ ul {
     BOUTON LIKE
 \*----------------*/
 .icon-heart-full {
-  font-size: 1.2rem;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   transform: scale(1);
+  font-size: 1.2rem;
+  text-shadow: -1px 0 black, 0 -1px black, 1px 0 black, 0 -1px black;
   transition: all 400ms;
 }
 .icon-heart-full:hover {
@@ -536,10 +537,24 @@ ul {
   display: flex;
   border-radius: 15px;
   background-color: #fff;
-  /*height: 68px;*/
   margin: 15px 4px;
   box-shadow: 5px 6px 10px #e5e5e5;
   overflow: hidden;
+}
+.r-btn--1 {
+  animation: loading-btn 400ms backwards;
+}
+.r-btn--2 {
+  animation: loading-btn 400ms backwards;
+  animation-delay: 100ms;
+}
+.r-btn--3 {
+  animation: loading-btn 400ms backwards;
+  animation-delay: 200ms;
+}
+.r-btn--4 {
+  animation: loading-btn 400ms backwards;
+  animation-delay: 300ms;
 }
 .r-btn__description {
   overflow: hidden;
@@ -566,26 +581,26 @@ ul {
   transform: scale(0, 1);
   transition: all 400ms;
 }
-.r-btn:hover {
+.r-btn:hover, .r-btn:active {
   /*.r-btn__description {
   }*/
   /*.icon-check-circle:before {
       Faire tourner
     }*/
 }
-.r-btn:hover .r-btn__price {
+.r-btn:hover .r-btn__price, .r-btn:active .r-btn__price {
   transform: translateX(0);
 }
-.r-btn:hover .r-btn__check {
+.r-btn:hover .r-btn__check, .r-btn:active .r-btn__check {
   padding: 5px;
   transform-origin: right;
   transform: scale(1, 1);
 }
 
-/*--------------------------------*\
-          #BOUTON "COMMANDER"
-          (PAGES RESTAURANTS)
-  \*--------------------------------*/
+/*-----------------------------*\
+      #BOUTON "COMMANDER"
+      (PAGES RESTAURANTS)
+\*-----------------------------*/
 .btn-commander {
   width: 187px;
   height: 50px;
@@ -599,6 +614,20 @@ ul {
   box-shadow: 5px 6px 10px #e5e5e5;
 }
 
+/*---------------------------*\
+      #ANIMATION DES BTN
+      (PAGES RESTAURANTS)
+\*---------------------------*/
+@keyframes loading-btn {
+  0% {
+    transform: translateY(5px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 /*----------------------*\
     HEADER DE L'INDEX
 \*----------------------*/
@@ -691,6 +720,22 @@ ul {
     justify-content: space-between;
     flex-wrap: wrap;
   }
+}
+
+/*--------------*\
+    FORMULAIRE
+   LOCALISATION
+\*--------------*/
+input {
+  border: none;
+  background-color: #eaeaea;
+  font-family: "roboto";
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  height: auto;
+  max-width: 7rem;
+  padding-right: 42px;
 }
 
 /*--------------*\

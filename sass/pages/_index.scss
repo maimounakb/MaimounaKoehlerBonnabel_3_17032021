@@ -80,3 +80,21 @@
     }
   }
 }
+
+
+/*--------------*\
+    FORMULAIRE
+   LOCALISATION
+\*--------------*/
+
+input {
+  border: none;
+  background-color: $color-background-tertiary;
+  font-family: 'roboto';
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  height: auto;
+  max-width: 7rem;
+  padding-right: 42px;
+}
