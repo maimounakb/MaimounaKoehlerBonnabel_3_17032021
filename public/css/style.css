@@ -160,6 +160,7 @@
 
 .icon-heart-empty:before {
   content: "";
+  margin: 0px;
 }
 
 .icon-heart-full:before {
@@ -311,6 +312,14 @@
       #MIXIN BACKGROUND
   (btn fonctionnement, index)
 \*---------------------------*/
+/*-------------------*\
+    #MIXIN BOUTON
+        LIKE
+\*-------------------*/
+/*---------------------*\
+    #MIXIN TRANSITION 
+       BOUTON LIKE
+\*---------------------*/
 /*------------------*\
     STYLE GENERAL
 \*------------------*/
@@ -443,26 +452,30 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: large;
   color: white;
 }
-
-/*----------------*\
-     ANIMATION 
-    BOUTON LIKE
-\*----------------*/
-.icon-heart-full {
-  transform: scale(1);
+.resto-description__like--empty {
+  color: white;
   font-size: 1.2rem;
-  text-shadow: -1px 0 black, 0 -1px black, 1px 0 black, 0 -1px black;
-  transition: all 400ms;
+  opacity: 1;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  transition: all 100ms;
+  position: absolute;
 }
-.icon-heart-full:hover {
-  transform: scale(1.02);
-  /*font-size: 1.3rem;*/
+.resto-description__like--full {
+  font-size: 1.35rem;
+  opacity: 0;
+  transition: all 300ms;
+  position: relative;
+}
+.resto-description__like:hover .resto-description__like--empty {
+  opacity: 0;
   text-shadow: none;
+}
+.resto-description__like:hover .resto-description__like--full {
+  opacity: 1;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  background-size: 100%;
+  /*background-size: 100%;*/
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -470,6 +483,40 @@ ul {
   -moz-text-fill-color: transparent;
 }
 
+/*----------------*\
+     ANIMATION 
+    BOUTON LIKE
+\*----------------*/
+/*
+.icon-heart-full--empty {
+  color: $color-txt-secondary;
+  opacity: 1;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  transition: all 400ms;
+  position: absolute;
+  &:hover {
+    opacity: 0;
+    text-shadow: none;
+  }
+}
+*/
+/*
+.icon-heart-full--full {
+  opacity: 0;
+  transition: all 400ms;
+  position: relative;
+  &:hover {
+    opacity: 1;
+    @include background-gradient;
+    /*background-size: 100%;*/
+/*background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+}
+*/
 /*---------------------------*\
     #BOUTONS FONCTIONNEMENT
     (PAGE D'ACCUEIL-INDEX)
@@ -836,6 +883,34 @@ input {
 }
 .title-resto__like {
   color: #f6f6f6;
+}
+.title-resto__like--empty {
+  color: white;
+  font-size: 1.2rem;
+  opacity: 1;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  transition: all 100ms;
+  position: absolute;
+}
+.title-resto__like--full {
+  font-size: 1.35rem;
+  opacity: 0;
+  transition: all 300ms;
+  position: relative;
+}
+.title-resto__like:hover .title-resto__like--empty {
+  opacity: 0;
+  text-shadow: none;
+}
+.title-resto__like:hover .title-resto__like--full {
+  opacity: 1;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  /*background-size: 100%;*/
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 /*-----------------*\

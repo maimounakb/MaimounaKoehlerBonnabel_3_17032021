@@ -15,6 +15,23 @@
   }
   &__like {
     color: $color-background-secondary;
+
+    &--empty {
+      color: $color-txt-secondary;
+      @include heart-empty;
+    }
+    &--full {
+      @include heart-full
+    }
+
+    &:hover {
+      .title-resto__like--empty {
+        @include transition-heart-empty
+      }
+      .title-resto__like--full {
+        @include transition-heart-full
+      }
+    }
   }
 }
 

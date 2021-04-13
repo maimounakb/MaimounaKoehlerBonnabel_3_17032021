@@ -72,7 +72,6 @@
   }
 }
 
-
 /*----------------------*\
       DESCRIPTIONS 
     DES RESTAURANTS
@@ -88,33 +87,62 @@
   }
   &__like {
     @include flex-center;
-    font-size: large;
     color: $color-txt-secondary;
+
+    &--empty {
+      color: $color-txt-secondary;
+      @include heart-empty;
+    }
+
+    &--full {
+      @include heart-full
+    }
+
+    &:hover {
+      .resto-description__like--empty {
+        @include transition-heart-empty
+      }
+      .resto-description__like--full {
+        @include transition-heart-full
+      }
+    }
   }
 }
-
 
 /*----------------*\
      ANIMATION 
     BOUTON LIKE
 \*----------------*/
 
-.icon-heart-full {
-  transform: scale(1);
-  font-size: 1.2rem;
-  text-shadow: -1px 0 black, 0 -1px black, 1px 0 black, 0 -1px black;
+/*
+.icon-heart-full--empty {
+  color: $color-txt-secondary;
+  opacity: 1;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   transition: all 400ms;
-
+  position: absolute;
   &:hover {
-    transform: scale(1.02);
-    /*font-size: 1.3rem;*/
+    opacity: 0;
     text-shadow: none;
+  }
+}
+*/
+
+/*
+.icon-heart-full--full {
+  opacity: 0;
+  transition: all 400ms;
+  position: relative;
+  &:hover {
+    opacity: 1;
     @include background-gradient;
-    background-size: 100%;
-    background-clip: text;
+    /*background-size: 100%;*/
+    /*background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
   }
 }
+*/
+
