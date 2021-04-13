@@ -54,7 +54,7 @@
     position: relative;
     @include flex-center;
     height: 63px;
-    box-shadow: 0px 3px 3px grey;
+    box-shadow: 0px 3px 3px $color-shadow-tertiary;
   }
   &__localisation {
     @include flex-center;
@@ -76,8 +76,25 @@
     width: 215px;
     @include btn-linear-gradient;
     margin-top: 32px;
-    @include box-shadow;
+    @include box-shadow($color-shadow-secondary);
   }
+}
+
+/*--------------*\
+    FORMULAIRE
+   LOCALISATION
+\*--------------*/
+
+input {
+  position: relative;
+  border: none;
+  background-color: $color-background-tertiary;
+  font-family: 'roboto';
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  height: auto;
+  max-width: 7rem;
 }
 
 /*---------------------------*\
@@ -126,22 +143,4 @@
       flex-wrap: wrap;
     }
   }
-}
-
-
-/*--------------*\
-    FORMULAIRE
-   LOCALISATION
-\*--------------*/
-
-input {
-  position: relative;
-  border: none;
-  background-color: $color-background-tertiary;
-  font-family: 'roboto';
-  font-size: 1rem;
-  font-weight: bold;
-  color: black;
-  height: auto;
-  max-width: 7rem;
 }

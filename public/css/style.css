@@ -475,7 +475,6 @@ ul {
 .resto-description__like:hover .resto-description__like--full {
   opacity: 1;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  /*background-size: 100%;*/
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -483,40 +482,6 @@ ul {
   -moz-text-fill-color: transparent;
 }
 
-/*----------------*\
-     ANIMATION 
-    BOUTON LIKE
-\*----------------*/
-/*
-.icon-heart-full--empty {
-  color: $color-txt-secondary;
-  opacity: 1;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  transition: all 400ms;
-  position: absolute;
-  &:hover {
-    opacity: 0;
-    text-shadow: none;
-  }
-}
-*/
-/*
-.icon-heart-full--full {
-  opacity: 0;
-  transition: all 400ms;
-  position: relative;
-  &:hover {
-    opacity: 1;
-    @include background-gradient;
-    /*background-size: 100%;*/
-/*background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  }
-}
-*/
 /*---------------------------*\
     #BOUTONS FONCTIONNEMENT
     (PAGE D'ACCUEIL-INDEX)
@@ -585,7 +550,7 @@ ul {
   border-radius: 15px;
   background-color: #fff;
   margin: 15px 4px;
-  box-shadow: 5px 6px 10px #e5e5e5;
+  box-shadow: 5px 6px 10px #e9e9e9;
   overflow: hidden;
 }
 .r-btn--1 {
@@ -656,7 +621,7 @@ ul {
   border-radius: 25px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
-  box-shadow: 5px 6px 10px #e5e5e5;
+  box-shadow: 5px 6px 10px #c6c6c6;
 }
 
 /*---------------------------*\
@@ -730,7 +695,7 @@ ul {
   justify-content: center;
   align-items: center;
   height: 63px;
-  box-shadow: 0px 3px 3px grey;
+  box-shadow: 0px 3px 3px #cfcfcf;
 }
 .header-index__localisation {
   display: flex;
@@ -761,7 +726,23 @@ ul {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
   margin-top: 32px;
-  box-shadow: 5px 6px 10px #e5e5e5;
+  box-shadow: 5px 6px 10px #c6c6c6;
+}
+
+/*--------------*\
+    FORMULAIRE
+   LOCALISATION
+\*--------------*/
+input {
+  position: relative;
+  border: none;
+  background-color: #eaeaea;
+  font-family: "roboto";
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  height: auto;
+  max-width: 7rem;
 }
 
 /*---------------------------*\
@@ -811,22 +792,6 @@ ul {
     justify-content: space-between;
     flex-wrap: wrap;
   }
-}
-
-/*--------------*\
-    FORMULAIRE
-   LOCALISATION
-\*--------------*/
-input {
-  position: relative;
-  border: none;
-  background-color: #eaeaea;
-  font-family: "roboto";
-  font-size: 1rem;
-  font-weight: bold;
-  color: black;
-  height: auto;
-  max-width: 7rem;
 }
 
 /*--------------*\
@@ -949,7 +914,6 @@ input {
 .title-resto__like:hover .title-resto__like--full {
   opacity: 1;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  /*background-size: 100%;*/
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;

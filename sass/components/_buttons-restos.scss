@@ -13,9 +13,9 @@
   border-radius: 15px;
   background-color: $color-background-primary;
   margin: 15px 4px;
-  @include box-shadow;
+  @include box-shadow($color-shadow-quaternary);
   overflow: hidden;
-  
+
   &--1 {
     animation: loading-btn 400ms backwards;
   }
@@ -61,10 +61,10 @@
     transition: all 400ms;
   }
 
-  &:hover, &:active {
-
+  &:hover,
+  &:active {
     .r-btn__price {
-      transform:translateX(0);
+      transform: translateX(0);
     }
     .r-btn__check {
       padding: 5px;
@@ -72,8 +72,8 @@
       transform: scale(1, 1);
     }
     .icon-check-circle:before {
-        transform: rotate(2turn);
-      }
+      transform: rotate(2turn);
+    }
   }
 }
 
@@ -85,7 +85,7 @@
 .btn-commander {
   width: 187px;
   @include btn-linear-gradient;
-  @include box-shadow;
+  @include box-shadow($color-shadow-secondary);
 }
 
 /*---------------------------*\
