@@ -981,6 +981,22 @@ input {
   background-color: #2e2d2d;
 }
 
+.nav-footer {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 800px) {
+  .nav-footer {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 500px) {
+  .nav-footer {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 .nav-footer__title {
   font-family: "shrikhandregular";
   font-weight: normal;
@@ -990,6 +1006,24 @@ input {
 }
 .nav-footer li {
   margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 800px) {
+  .nav-footer li {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+.nav-footer ul {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 800px) {
+  .nav-footer ul {
+    margin-left: 1.3rem;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

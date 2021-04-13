@@ -3,18 +3,41 @@
 \*-------------*/
 
 .footer {
-    background-color: $color-background-footer;
-} 
+  background-color: $color-background-footer;
+}
 
 .nav-footer {
-    &__title {
-        font-family: 'shrikhandregular';
-        font-weight: normal;
+    @include flex-column;
+    @include second-breakpoint {
+      flex-direction: row;
     }
-    &__title, &__link {
-        color: $color-txt-secondary;
+  @include first-breakpoint {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &__title {
+    font-family: "shrikhandregular";
+    font-weight: normal;
+  }
+  &__title,
+  &__link {
+    color: $color-txt-secondary;
+  }
+  li {
+    margin-bottom: 0.5rem;
+    @include second-breakpoint {
+        margin-top: auto;
+        margin-bottom: auto;
     }
-    li {
-        margin-bottom: 0.5rem;
+  }
+  ul {
+      flex: 1;
+    @include flex-column;
+    @include second-breakpoint {
+        margin-left: 1.3rem;
+      flex-direction: row;
+      justify-content: space-around;
     }
+  }
 }
