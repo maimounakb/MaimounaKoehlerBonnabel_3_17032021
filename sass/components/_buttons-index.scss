@@ -40,11 +40,11 @@
     min-width: 350px;
   }
   
-  @include second-breakpoint {
+  @include fourth-breakpoint {
     margin-left: 20px;
   }
 
-  @include third-breakpoint {
+  @include fifth-breakpoint {
     min-width: 300px;
     margin-left: 30px;
   }

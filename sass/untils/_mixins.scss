@@ -26,6 +26,19 @@
   );
 }
 
+@mixin background-gradient-hover {
+  background: linear-gradient(
+    to bottom right,
+    $color-secondary-hover,
+    $color-primary-hover
+  );
+}
+
+/*
+@mixin lighten-color-secondary($color:$color-secondary) {
+  $color: lighten ($color-secondary, 10%);
+}
+*/
 /*-------------------*\
     #MIXIN BOUTON
     (avec dégradé)
@@ -38,6 +51,11 @@
   border-radius: 25px;
   @include background-gradient;
   color: $color-txt-secondary;
+  @include box-shadow($color-shadow-secondary);
+  &:hover {
+    @include background-gradient-hover;
+    @include box-shadow($color-shadow-secondary-hover);
+  }
 }
 
 /*-------------------*\

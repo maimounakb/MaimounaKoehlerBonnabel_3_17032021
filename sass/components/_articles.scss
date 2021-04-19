@@ -62,7 +62,7 @@
     max-width: 500px;
   }
 
-  @include second-breakpoint {
+  @include fourth-breakpoint {
     min-width: 335px;
     width: 48%;
     max-width: none;

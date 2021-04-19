@@ -8,7 +8,7 @@
 
 .nav-footer {
     @include flex-column;
-    @include second-breakpoint {
+    @include fourth-breakpoint {
       flex-direction: row;
     }
   @include first-breakpoint {
@@ -26,7 +26,7 @@
   }
   li {
     margin-bottom: 0.5rem;
-    @include second-breakpoint {
+    @include fourth-breakpoint {
         margin-top: auto;
         margin-bottom: auto;
     }
@@ -34,7 +34,7 @@
   ul {
       flex: 1;
     @include flex-column;
-    @include second-breakpoint {
+    @include fourth-breakpoint {
         margin-left: 1.3rem;
       flex-direction: row;
       justify-content: space-around;

@@ -14,28 +14,28 @@
   background-color: $color-background-primary;
   margin: 15px 4px;
   @include box-shadow($color-shadow-quaternary);
+  max-width: 400px;
   overflow: hidden;
 
   &--1 {
-    animation: loading-btn 400ms backwards;
+    animation: loading-btn 600ms backwards;
   }
   &--2 {
-    animation: loading-btn 400ms backwards;
+    animation: loading-btn 600ms backwards;
     animation-delay: 100ms;
   }
   &--3 {
-    animation: loading-btn 400ms backwards;
-    animation-delay: 200ms;
+    animation: loading-btn 600ms backwards;
+    animation-delay: 250ms;
   }
   &--4 {
-    animation: loading-btn 400ms backwards;
-    animation-delay: 300ms;
+    animation: loading-btn 600ms backwards;
+    animation-delay: 400ms;
   }
 
   &__description {
     overflow: hidden;
     width: 100%;
-    /*background-color: yellow;*/
   }
 
   &__price {
@@ -51,14 +51,15 @@
   &__check {
     background-color: $color-tertiary;
     @include flex-center;
-    transform-origin: right;
-    transform: scale(0, 1);
-    transition: all 400ms;
+    transform: translateX(55px);
+    transition: all 500ms;
+    width: 75px;
+    overflow: hidden;
   }
 
   .icon-check-circle:before {
     transform: rotate(0deg);
-    transition: all 400ms;
+    transition: all 500ms;
   }
 
   &:hover,
@@ -68,12 +69,24 @@
     }
     .r-btn__check {
       padding: 5px;
-      transform-origin: right;
-      transform: scale(1, 1);
+      transform: translateX(0px);
     }
     .icon-check-circle:before {
       transform: rotate(2turn);
     }
+  }
+
+  @include first-breakpoint {
+    width: 390px;
+    /*margin-right: 20px;*/
+  }
+  @include third-breakpoint {
+    width: 48%;
+    /*margin-right: 25px;*/
+  }
+  @include fifth-breakpoint {
+    width: 100%;
+    /*margin-right: 0px;*/
   }
 }
 
@@ -85,7 +98,6 @@
 .btn-commander {
   width: 187px;
   @include btn-linear-gradient;
-  @include box-shadow($color-shadow-secondary);
 }
 
 /*---------------------------*\

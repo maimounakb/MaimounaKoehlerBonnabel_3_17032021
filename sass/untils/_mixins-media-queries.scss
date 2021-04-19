@@ -5,12 +5,24 @@
 }
 
 @mixin second-breakpoint {
-    @media screen and (min-width: 800px){
+    @media screen and (min-width: 700px){
         @content;
     }
 }
 
 @mixin third-breakpoint {
+    @media screen and (min-width: 750px){
+        @content;
+    }
+}
+
+@mixin fourth-breakpoint {
+    @media screen and (min-width: 800px){
+        @content;
+    }
+}
+
+@mixin fifth-breakpoint {
     @media screen and (min-width: 1050px){
         @content;
     }

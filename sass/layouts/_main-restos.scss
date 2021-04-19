@@ -5,6 +5,42 @@
 
 .carte-resto {
   margin-bottom: 35px;
+  width: 100%;
+  max-width: 398px;
+  @include first-breakpoint {
+    @include flex-column;
+    max-width: 398px;
+  }
+
+  @include third-breakpoint {
+    max-width: 742px;
+  }
+  
+  @include fifth-breakpoint {
+    width: 32%;
+    margin-bottom: 0px;
+  }
+}
+
+/*------------------*\
+      CONTENEUR 
+   PLATS DES RESTOS
+\*------------------*/
+
+.btn-plats {
+  @include flex-column;
+
+  @include third-breakpoint {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    /*width: 742px;*/
+  }
+ 
+  @include fifth-breakpoint {
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 /*---------------*\
@@ -24,6 +60,9 @@
     overflow: hidden;
     text-overflow: ellipsis; 
     white-space:nowrap;
+  }
+  &--title-first-line {
+    margin-bottom: 0px;
   }
   p {
     font-size: small;

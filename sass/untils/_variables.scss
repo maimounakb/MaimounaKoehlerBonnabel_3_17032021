@@ -6,6 +6,9 @@ $color-primary:#9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
+$color-primary-hover: lighten($color-primary, 5%);
+$color-secondary-hover: lighten($color-secondary, 5%);
+
 /*---------------------------*\
     #VARIABLES COULEURS
         BACKGROUNDS
@@ -37,6 +40,8 @@ $color-shadow-primary: rgb(229, 229, 229);
 $color-shadow-secondary: rgb(198, 198, 198);
 $color-shadow-tertiary: rgb(207, 207, 207);
 $color-shadow-quaternary: rgb(233, 233, 233);
+
+$color-shadow-secondary-hover: darken($color-background-secondary, 25%);
 
 /*---------------------------*\
     #VARIABLES COULEURS

@@ -33,6 +33,19 @@
       }
     }
   }
+
+  @include first-breakpoint {
+    justify-content: center;
+    .title-resto__title {
+      margin-right: 65px;
+      margin-left: auto;
+      padding-left: 30px;
+      font-size: xx-large;
+    }
+    .title-resto__like {
+      margin-right: auto;
+    }
+  }
 }
 
 /*-----------------*\
@@ -41,16 +54,48 @@
 \*-----------------*/
 
 .title-plats {
-  margin-left: 10px;
   h2 {
+    margin-left: 10px;
     font-family: "robotothin";
     font-size: medium;
     text-transform: uppercase;
     margin-bottom: 5px;
   }
   &__underline {
+    margin-left: 11px;
     height: 3px;
     width: 40px;
     background-color: $color-underline-h2;
+  }
+}
+
+@include first-breakpoint {
+  .title-plats {
+    &--entree {
+    /*margin-right: 265px;*/
+    margin-right: auto;
+  }
+    &--plats {
+      /*margin-right: 286px;*/
+      margin-right: auto;
+    }
+    &--desserts {
+      /*margin-right: 256.5px;*/
+      margin-right: auto;
+    }
+  }
+}
+
+@include fourth-breakpoint {
+  .title-plats {
+    &--entree {
+    margin-right: auto;
+  }
+    &--plats {
+      margin-right: auto;
+    }
+    &--desserts {
+      margin-right: auto;
+    }
   }
 }
