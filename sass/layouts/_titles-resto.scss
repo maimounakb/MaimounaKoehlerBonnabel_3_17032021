@@ -6,6 +6,7 @@
 .title-resto {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: $color-background-secondary;
   margin: 0px 10px 45px 10px;
   &__title {
@@ -14,13 +15,21 @@
     font-weight: normal;
   }
   &__like {
+    height: 21px;
+    width: 23px;
+    margin-bottom: auto;
+    margin-top: auto;
     color: $color-background-secondary;
+    @include flex-center;
 
     &--empty {
+      height: 21px;
       color: $color-txt-secondary;
       @include heart-empty;
     }
     &--full {
+      height: 23px;
+      width: 23px;
       @include heart-full
     }
 

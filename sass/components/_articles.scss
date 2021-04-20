@@ -83,15 +83,21 @@
     @include flex-column;
   }
   &__like {
+    height: 21px;
+    margin-top: auto;
+    margin-bottom: auto;
     @include flex-center;
     color: $color-txt-secondary;
 
     &--empty {
+      height: 21px;
       color: $color-txt-secondary;
       @include heart-empty;
     }
 
     &--full {
+      height: 23px;
+      width: 23px;
       @include heart-full
     }
 
