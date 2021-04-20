@@ -4,7 +4,7 @@
 \*------------------*/
 
 .carte-resto {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   width: 100%;
   max-width: 398px;
   @include first-breakpoint {
@@ -51,12 +51,12 @@
 .plat-description {
   @include flex-column;
   justify-content: space-between;
-  padding: 15px 0px 13px 10px;
+  padding: 12px 0px 12px 10px;
   overflow: hidden;
   h3 {
     margin: 0px;
     margin-bottom: 3px;
-    font-size: medium;
+    font-size: 1.1rem;
     overflow: hidden;
     text-overflow: ellipsis; 
     white-space:nowrap;
@@ -65,7 +65,8 @@
     margin-bottom: 0px;
   }
   p {
-    font-size: small;
+    font-family: "robotolight";
+    font-size: 0.9rem;
     overflow: hidden;
     text-overflow: ellipsis; 
     white-space:nowrap;

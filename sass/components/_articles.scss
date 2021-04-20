@@ -23,6 +23,9 @@
     justify-content: flex-end;
   }
   &__button-new {
+    font-family: "robotolight";
+    font-weight: bold;
+    font-size: 0.85rem;
     @include flex-center;
     height: 30px;
     width: 80px;
@@ -51,10 +54,13 @@
     padding: 15px 20px 15px 15px;
   }
   h3 {
-    margin: 0px 0px 5px 0px;
+    margin: 0px 0px 0px 0px;
+    font-size: 1.05rem;
   }
   p {
     margin: 0px;
+    font-family: "robotolight";
+    font-size: 1rem;
   }
 
   @include first-breakpoint {

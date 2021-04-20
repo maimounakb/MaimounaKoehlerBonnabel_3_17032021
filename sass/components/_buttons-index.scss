@@ -4,6 +4,7 @@
 \*---------------------------*/
 
 .f-btn {
+  /*max-width: 350px;*/
   height: 75px;
   background-color: $color-background-secondary;
   border-radius: 20px;
@@ -28,6 +29,7 @@
   }
   &__title {
     @include flex-center;
+    font-size: 1rem;
   }
   &:hover {
     @include background-fonctionnement;

@@ -8,10 +8,10 @@
   justify-content: space-between;
   align-items: center;
   background-color: $color-background-secondary;
-  margin: 0px 10px 45px 10px;
+  margin: 0px 10px 20px 10px;
   &__title {
     font-family: "shrikhandregular";
-    font-size: x-large;
+    font-size: 1.7rem;
     font-weight: normal;
   }
   &__like {
@@ -48,6 +48,7 @@
     .title-resto__title {
       margin-right: 65px;
       margin-left: auto;
+      margin-bottom: 45px;
       padding-left: 30px;
       font-size: xx-large;
     }

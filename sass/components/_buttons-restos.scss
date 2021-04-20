@@ -12,7 +12,7 @@
   display: flex;
   border-radius: 15px;
   background-color: $color-background-primary;
-  margin: 15px 4px;
+  margin: 15px 4px 0px 4px;
   @include box-shadow($color-shadow-quaternary);
   max-width: 400px;
   overflow: hidden;
@@ -39,8 +39,8 @@
   }
 
   &__price {
-    font-size: small;
-    padding: 15px 10px 15px 10px;
+    font-size: 0.9rem;
+    padding: 15px 10px 12px 10px;
     display: flex;
     align-items: flex-end;
     font-weight: bold;
