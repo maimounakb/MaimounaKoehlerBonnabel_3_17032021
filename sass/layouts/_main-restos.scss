@@ -4,7 +4,7 @@
 \*------------------*/
 
 .carte-resto {
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   width: 100%;
   max-width: 398px;
   @include first-breakpoint {
@@ -51,7 +51,7 @@
 .plat-description {
   @include flex-column;
   justify-content: space-between;
-  padding: 12px 0px 12px 10px;
+  padding: 10px 0px 12px 10px;
   overflow: hidden;
   h3 {
     margin: 0px;

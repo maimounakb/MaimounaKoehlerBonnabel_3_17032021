@@ -2,6 +2,7 @@
     #HEADER (RESTAURANT)
 \*-------------------------*/
 .header-resto {
+  background-color: white;
   @include flex-column;
   &__return-index {
     display: flex;
@@ -40,5 +41,5 @@
 .logo--resto {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 44px;
+  padding-right: 52px;
 }

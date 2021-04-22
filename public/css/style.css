@@ -164,6 +164,8 @@
 
 .icon-arrow-left:before {
   content: "";
+  font-size: 1.2rem;
+  margin-left: 20px;
 }
 
 .icon-check-circle:before {
@@ -174,23 +176,35 @@
   margin-left: 0px;
   margin-right: 8px;
   content: "";
+  font-size: 0.8rem;
 }
 
 .icon-list-ul:before {
   content: "";
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 1.2rem;
 }
 
 .icon-mobile-alt:before {
   content: "";
+  font-size: 1.3rem;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .icon-store:before {
   content: "";
+  font-size: 1rem;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .icon-utensils:before {
   content: "";
   margin-left: 0px;
+  margin-right: 13px;
+  font-size: small;
 }
 
 .icon-search:before {
@@ -201,64 +215,19 @@
   content: "m";
 }
 
+/*
 @font-face {
   font-family: "icomoon";
   src: url("../icones/icomoon.eot?4fdal5");
-  src: url("../icones/icomoon.eot?4fdal5#iefix") format("embedded-opentype"), url("../icones/icomoon.ttf?4fdal5") format("truetype"), url("../icones/icomoon.woff?4fdal5") format("woff"), url("../icones/icomoon.svg?4fdal5#icomoon") format("svg");
+  src: url("../icones/icomoon.eot?4fdal5#iefix")
+      format("embedded-opentype"),
+    url("../icones/icomoon.ttf?4fdal5") format("truetype"),
+    url("../icones/icomoon.woff?4fdal5") format("woff"),
+    url("../icones/icomoon.svg?4fdal5#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
-}
-/*[class^="icon-"], [class*=" icon-"]*/
-/*
-.icon-arrow-left:before,
-.icon-check-circle:before,
-.icon-hands-helping:before,
-.icon-list-ul:before,
-.icon-mobile-alt:before,
-.icon-store:before,
-.icon-utensils:before,
-.icon-search:before,
-.icon-map-marker-alt:before {
-  font-family: "icomoon" !important;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  margin: 15px;
-}
-/*
-.icon-arrow-left:before {
-  content: "\e900";
-}
-.icon-check-circle:before {
-  content: "\e901";
-}
-.icon-hands-helping:before {
-  content: "\e902";
-  margin-left: 0px;
-}
-.icon-list-ul:before {
-  content: "\e903";
-}
-.icon-mobile-alt:before {
-  content: "\e904";
-}
-.icon-store:before {
-  content: "\e905";
-}
-.icon-utensils:before {
-  content: "\e906";
-  margin-left: 0px;
-}
-.icon-search:before {
-  content: "\72";
-}
-.icon-map-marker-alt:before {
-  content: "\6d";
-}
-*/
+}*/
 /*---------------------------*\
     #VARIABLES COULEURS
     IDENTITE GRAPHIQUE
@@ -290,11 +259,6 @@
     #MIXIN BACKGROUND
         DEGRADE
 \*-------------------*/
-/*
-@mixin lighten-color-secondary($color:$color-secondary) {
-  $color: lighten ($color-secondary, 10%);
-}
-*/
 /*-------------------*\
     #MIXIN BOUTON
     (avec dégradé)
@@ -377,9 +341,9 @@ ul {
   justify-content: flex-end;
 }
 .resto-prev__button-new {
-  font-family: "robotolight";
-  font-weight: bold;
-  font-size: 0.85rem;
+  font-family: "robotomedium";
+  /*font-weight: bold;*/
+  font-size: 0.843rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -410,13 +374,13 @@ ul {
   padding: 15px 20px 15px 15px;
 }
 .resto-prev h3 {
-  margin: 0px 0px 0px 0px;
-  font-size: 1.05rem;
+  margin: 0px 0px 2px 0px;
+  font-size: 1.1rem;
 }
 .resto-prev p {
   margin: 0px;
   font-family: "robotolight";
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 @media screen and (min-width: 500px) {
   .resto-prev {
@@ -448,7 +412,7 @@ ul {
 .resto-description__like {
   height: 21px;
   margin-top: auto;
-  margin-bottom: auto;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -516,7 +480,6 @@ ul {
   justify-content: center;
   align-items: center;
   color: grey;
-  font-size: large;
 }
 .f-btn__title {
   display: flex;
@@ -560,7 +523,7 @@ ul {
   display: flex;
   border-radius: 15px;
   background-color: #fff;
-  margin: 15px 4px 0px 4px;
+  margin: 14px 4px 0px 4px;
   box-shadow: 5px 6px 10px #e9e9e9;
   max-width: 400px;
   overflow: hidden;
@@ -590,7 +553,7 @@ ul {
   display: flex;
   align-items: flex-end;
   font-weight: bold;
-  transform: translateX(30px);
+  transform: translateX(40px);
   transition: transform 400ms;
 }
 .r-btn__check {
@@ -650,6 +613,7 @@ ul {
   border-radius: 25px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
+  font-size: 1rem;
   box-shadow: 5px 6px 10px #c6c6c6;
 }
 .btn-commander:hover {
@@ -680,6 +644,7 @@ ul {
   justify-content: center;
   align-items: center;
   position: absolute;
+  top: 0px;
 }
 .loading-accueil__spinner {
   margin: auto;
@@ -723,6 +688,7 @@ ul {
   text-align: center;
 }
 .header-index__logo {
+  background-color: white;
   position: relative;
   display: flex;
   justify-content: center;
@@ -746,8 +712,10 @@ ul {
   padding: 20px 19px 57px 19px;
 }
 .header-index__presentation h1 {
+  font-family: "robotomedium";
   margin: 15px;
   line-height: 1.7rem;
+  font-size: 1.45rem;
 }
 @media screen and (min-width: 800px) {
   .header-index__presentation h1 {
@@ -769,6 +737,7 @@ ul {
   border-radius: 25px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
+  font-size: 1rem;
   box-shadow: 5px 6px 10px #c6c6c6;
   margin-top: 32px;
 }
@@ -803,8 +772,8 @@ input {
 .fonctionnement__title {
   margin-top: 25px;
   margin-bottom: 25px;
-  font-family: "robotomedium";
-  font-size: 1.4rem;
+  font-family: "roboto";
+  font-size: 1.5rem;
 }
 @media screen and (min-width: 800px) {
   .fonctionnement__title {
@@ -872,7 +841,7 @@ input {
 
 .container-index {
   padding: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 47px;
 }
 
 .container-footer {
@@ -920,6 +889,7 @@ input {
     #HEADER (RESTAURANT)
 \*-------------------------*/
 .header-resto {
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
@@ -960,7 +930,7 @@ input {
 .logo--resto {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 44px;
+  padding-right: 52px;
 }
 
 /*--------------*\
@@ -972,7 +942,7 @@ input {
   justify-content: space-between;
   align-items: center;
   background-color: #f6f6f6;
-  margin: 0px 10px 20px 10px;
+  margin: 0px 30px 20px 10px;
 }
 .title-resto__title {
   font-family: "shrikhandregular";
@@ -1026,7 +996,6 @@ input {
   .title-resto .title-resto__title {
     margin-right: 65px;
     margin-left: auto;
-    margin-bottom: 45px;
     padding-left: 30px;
     font-size: xx-large;
   }
@@ -1040,11 +1009,10 @@ input {
   (ETAPES DU REPAS)
 \*-----------------*/
 .title-plats h2 {
-  margin-left: 10px;
+  margin: 14px 0px 5px 10px;
   font-family: "robotothin";
-  font-size: medium;
+  font-size: 0.97rem;
   text-transform: uppercase;
-  margin-bottom: 5px;
 }
 .title-plats__underline {
   margin-left: 11px;
@@ -1055,15 +1023,12 @@ input {
 
 @media screen and (min-width: 500px) {
   .title-plats--entree {
-    /*margin-right: 265px;*/
     margin-right: auto;
   }
   .title-plats--plats {
-    /*margin-right: 286px;*/
     margin-right: auto;
   }
   .title-plats--desserts {
-    /*margin-right: 256.5px;*/
     margin-right: auto;
   }
 }
@@ -1083,7 +1048,7 @@ input {
    (ETAPES DU REPAS)
 \*------------------*/
 .carte-resto {
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   width: 100%;
   max-width: 398px;
 }
@@ -1137,7 +1102,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 12px 0px 12px 10px;
+  padding: 10px 0px 12px 10px;
   overflow: hidden;
 }
 .plat-description h3 {
@@ -1199,6 +1164,7 @@ input {
 }
 .nav-footer li {
   font-family: "roboto";
+  font-size: 0.97rem;
   margin-bottom: 0.3rem;
 }
 @media screen and (min-width: 500px) {

@@ -34,11 +34,7 @@
   );
 }
 
-/*
-@mixin lighten-color-secondary($color:$color-secondary) {
-  $color: lighten ($color-secondary, 10%);
-}
-*/
+ 
 /*-------------------*\
     #MIXIN BOUTON
     (avec dégradé)
@@ -51,6 +47,7 @@
   border-radius: 25px;
   @include background-gradient;
   color: $color-txt-secondary;
+  font-size: 1rem;
   @include box-shadow($color-shadow-secondary);
   &:hover {
     @include background-gradient-hover;

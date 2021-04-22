@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: $color-background-secondary;
-  margin: 0px 10px 20px 10px;
+  margin: 0px 30px 20px 10px;
   &__title {
     font-family: "shrikhandregular";
     font-size: 1.7rem;
@@ -48,7 +48,6 @@
     .title-resto__title {
       margin-right: 65px;
       margin-left: auto;
-      margin-bottom: 45px;
       padding-left: 30px;
       font-size: xx-large;
     }
@@ -65,11 +64,10 @@
 
 .title-plats {
   h2 {
-    margin-left: 10px;
+    margin: 14px 0px 5px 10px;
     font-family: "robotothin";
-    font-size: medium;
+    font-size: 0.97rem;
     text-transform: uppercase;
-    margin-bottom: 5px;
   }
   &__underline {
     margin-left: 11px;
@@ -82,15 +80,12 @@
 @include first-breakpoint {
   .title-plats {
     &--entree {
-    /*margin-right: 265px;*/
     margin-right: auto;
   }
     &--plats {
-      /*margin-right: 286px;*/
       margin-right: auto;
     }
     &--desserts {
-      /*margin-right: 256.5px;*/
       margin-right: auto;
     }
   }
