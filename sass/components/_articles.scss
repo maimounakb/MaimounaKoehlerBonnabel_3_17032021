@@ -102,15 +102,15 @@
     &--full {
       height: 23px;
       width: 23px;
-      @include heart-full
+      @include heart-full;
     }
 
     &:hover {
       .resto-description__like--empty {
-        @include transition-heart-empty
+        @include transition-heart-empty;
       }
       .resto-description__like--full {
-        @include transition-heart-full
+        @include transition-heart-full;
       }
     }
   }

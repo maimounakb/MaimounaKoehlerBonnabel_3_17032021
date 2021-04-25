@@ -14,11 +14,11 @@ h1 {
   margin: 0px;
 }
 
-
-h1::first-letter, h3::first-letter, p::first-letter {
+h1::first-letter,
+h3::first-letter,
+p::first-letter {
   text-transform: uppercase;
 }
-
 
 p {
   margin: 0rem;

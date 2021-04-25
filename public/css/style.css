@@ -4,7 +4,7 @@
  *
  * BASE
  * General................Styles du body, H1, a, ul.
- * Icones.................@Fontface et parapètre des icones.
+ * Icones.................@Fontface et paramètres des icones.
  * Polices................@Fontface des polices Shrikhand et roboto.
  *
  * UNTILS
@@ -16,9 +16,9 @@
  * Containers.............Différents conteneurs (marges réutilisées).
  * Logo...................Caractéristiques du logo.
  * Footer.................Footer commun à toues les pages.
- * Header-restos..........Header des pages des restaurants.
- * Titles-resto............Titres des pages restaurants.
- * Main-restos............Main des pages restaurants.
+ * Restos-header..........Header des pages des restaurants.
+ * Restos-titles..........Titres des pages restaurants.
+ * Restos-main............Main des pages restaurants.
  *
  * COMPONENTS
  * Articles...............Liens vers les restaurants.
@@ -26,7 +26,9 @@
  * Buttons-restos.........Boutons des pages des restaurants.
  *
  * PAGES
- * Index..................Styles spécifiques à la page d'accueil.
+ * Index-loading..........Loading-spinner au chargement de la page d'accueil.
+ * Index-header...........Header de la page d'accueil.
+ * Index-main.............Main de la page d'accueil.
  */
 /*---------------------------*\
     #POLICE SHRIKHANDRE
@@ -247,7 +249,9 @@ h1 {
   margin: 0px;
 }
 
-h1::first-letter, h3::first-letter, p::first-letter {
+h1::first-letter,
+h3::first-letter,
+p::first-letter {
   text-transform: uppercase;
 }
 
@@ -392,7 +396,7 @@ ul {
 }
 .resto-description__like:hover .resto-description__like--full {
   opacity: 1;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -405,7 +409,6 @@ ul {
     (PAGE D'ACCUEIL-INDEX)
 \*---------------------------*/
 .f-btn {
-  /*max-width: 350px;*/
   height: 75px;
   background-color: #f6f6f6;
   border-radius: 20px;
@@ -422,7 +425,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #9356DC;
+  background-color: #9356dc;
   border-radius: 20px;
   color: white;
 }
@@ -442,7 +445,7 @@ ul {
   background-color: #f2eafb;
 }
 .f-btn:hover .f-btn__icon {
-  color: #9356DC;
+  color: #9356dc;
 }
 @media screen and (min-width: 500px) {
   .f-btn {
@@ -508,7 +511,7 @@ ul {
   transition: transform 400ms;
 }
 .r-btn__check {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -559,7 +562,7 @@ ul {
   justify-content: center;
   align-items: center;
   border-radius: 25px;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
   color: white;
   font-size: 1rem;
   box-shadow: 5px 6px 10px #c6c6c6;
@@ -683,7 +686,7 @@ ul {
   justify-content: center;
   align-items: center;
   border-radius: 25px;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
   color: white;
   font-size: 1rem;
   box-shadow: 5px 6px 10px #c6c6c6;
@@ -731,7 +734,7 @@ input {
     margin-right: auto;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 500px) {
   .fonctionnement__buttons {
     display: flex;
     justify-content: center;
@@ -739,7 +742,7 @@ input {
     flex-direction: column;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1050px) {
   .fonctionnement__buttons {
     flex-direction: row;
     flex-wrap: wrap;
@@ -747,9 +750,9 @@ input {
 }
 
 /*---------------------------*\
-    ARTICLES RESTAURANTS
-      (organisation)
-\*---------------------------*/
+      ARTICLES RESTAURANTS
+        (organisation)
+  \*---------------------------*/
 .restaurants h2 {
   margin-top: 35px;
   margin-bottom: 27px;
@@ -920,7 +923,7 @@ input {
 }
 .title-resto__like:hover .title-resto__like--full {
   opacity: 1;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;

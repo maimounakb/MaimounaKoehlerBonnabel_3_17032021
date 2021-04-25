@@ -1,0 +1,56 @@
+/*---------------------------*\
+    FONCTIONNEMENT 
+    POUR UTILISATEUR
+\*---------------------------*/
+.fonctionnement {
+  background-color: $color-txt-secondary;
+  &__title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: "roboto";
+    font-size: 1.5rem;
+    @include second-breakpoint {
+      font-size: 1.8rem;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__buttons {
+    @include first-breakpoint {
+      @include flex-center;
+      flex-direction: column;
+    }
+    @include third-breakpoint {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+/*---------------------------*\
+      ARTICLES RESTAURANTS
+        (organisation)
+  \*---------------------------*/
+
+.restaurants {
+  h2 {
+    margin-top: 35px;
+    margin-bottom: 27px;
+    line-height: 100%;
+
+    @include second-breakpoint {
+      font-size: 1.8rem;
+    }
+  }
+  &__articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include second-breakpoint {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}

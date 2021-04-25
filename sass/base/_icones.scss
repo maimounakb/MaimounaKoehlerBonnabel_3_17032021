@@ -2,12 +2,12 @@
       #ICONES
 \*----------------*/
 @font-face {
-  font-family: 'icones';
-  src:  url('../icones/icones.eot?7ck4i7');
-  src:  url('../icones/icones.eot?7ck4i7#iefix') format('embedded-opentype'),
-    url('../icones/icones.ttf?7ck4i7') format('truetype'),
-    url('../icones/icones.woff?7ck4i7') format('woff'),
-    url('../icones/icones.svg?7ck4i7#icones') format('svg');
+  font-family: "icones";
+  src: url("../icones/icones.eot?7ck4i7");
+  src: url("../icones/icones.eot?7ck4i7#iefix") format("embedded-opentype"),
+    url("../icones/icones.ttf?7ck4i7") format("truetype"),
+    url("../icones/icones.woff?7ck4i7") format("woff"),
+    url("../icones/icones.svg?7ck4i7#icones") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,7 +27,7 @@
 .icon-search:before,
 .icon-map-marker-alt:before {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icones' !important;
+  font-family: "icones" !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;

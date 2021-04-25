@@ -1,0 +1,46 @@
+/*---------------------*\
+    CHARGEMENT INDEX
+\*---------------------*/
+
+.loading-accueil {
+  width: 100%;
+  @include flex-center;
+  position: absolute;
+  top: 0px;
+  &__spinner {
+    margin: auto;
+    margin-top: 200px;
+    color: black;
+    font-size: 1.5rem;
+    animation: loading-accueil 1000ms;
+    animation-fill-mode: forwards;
+  }
+}
+
+.page-accueil {
+  animation: page-accueil 200ms 1000ms;
+  animation-fill-mode: backwards;
+}
+
+@keyframes page-accueil {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes loading-accueil {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(0.5turn);
+  }
+}

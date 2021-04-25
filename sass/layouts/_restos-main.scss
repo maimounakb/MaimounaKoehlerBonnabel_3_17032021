@@ -15,7 +15,7 @@
   @include second-breakpoint {
     max-width: 742px;
   }
-  
+
   @include third-breakpoint {
     width: 32%;
     margin-bottom: 0px;
@@ -35,7 +35,7 @@
     justify-content: space-between;
     flex-wrap: wrap-reverse;
   }
- 
+
   @include third-breakpoint {
     justify-content: center;
     width: 100%;
@@ -57,8 +57,8 @@
     margin-bottom: 3px;
     font-size: 1.1rem;
     overflow: hidden;
-    text-overflow: ellipsis; 
-    white-space:nowrap;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   &--title-first-line {
     margin-bottom: 0px;
@@ -67,7 +67,7 @@
     font-family: "robotolight";
     font-size: 0.9rem;
     overflow: hidden;
-    text-overflow: ellipsis; 
-    white-space:nowrap;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }

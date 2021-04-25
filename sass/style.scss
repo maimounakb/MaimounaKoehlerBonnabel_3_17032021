@@ -3,7 +3,7 @@
  *
  * BASE
  * General................Styles du body, H1, a, ul.
- * Icones.................@Fontface et parapètre des icones.
+ * Icones.................@Fontface et paramètres des icones.
  * Polices................@Fontface des polices Shrikhand et roboto.
  *
  * UNTILS
@@ -15,9 +15,9 @@
  * Containers.............Différents conteneurs (marges réutilisées).
  * Logo...................Caractéristiques du logo.
  * Footer.................Footer commun à toues les pages.
- * Header-restos..........Header des pages des restaurants.
- * Titles-resto............Titres des pages restaurants.
- * Main-restos............Main des pages restaurants.
+ * Restos-header..........Header des pages des restaurants.
+ * Restos-titles..........Titres des pages restaurants.
+ * Restos-main............Main des pages restaurants.
  *
  * COMPONENTS
  * Articles...............Liens vers les restaurants.
@@ -25,7 +25,9 @@
  * Buttons-restos.........Boutons des pages des restaurants.
  *
  * PAGES
- * Index..................Styles spécifiques à la page d'accueil.
+ * Index-loading..........Loading-spinner au chargement de la page d'accueil.
+ * Index-header...........Header de la page d'accueil.
+ * Index-main.............Main de la page d'accueil.
  */
 
 @import "./base/polices.scss";
@@ -41,11 +43,13 @@
 @import "./components/buttons-index.scss";
 @import "./components/buttons-restos.scss";
 
-@import "./pages/index.scss";
+@import "./pages/index-loading.scss";
+@import "./pages/index-header.scss";
+@import "./pages/index-main.scss";
 
 @import "./layouts/containers.scss";
 @import "./layouts/logo.scss";
-@import "./layouts/header-restos.scss";
-@import "./layouts/titles-resto.scss";
-@import "./layouts/main-restos.scss";
+@import "./layouts/restos-header.scss";
+@import "./layouts/restos-titles.scss";
+@import "./layouts/restos-main.scss";
 @import "./layouts/footer.scss";

@@ -4,7 +4,6 @@
 \*---------------------------*/
 
 .f-btn {
-  /*max-width: 350px;*/
   height: 75px;
   background-color: $color-background-secondary;
   border-radius: 20px;
@@ -40,7 +39,7 @@
   @include first-breakpoint {
     min-width: 350px;
   }
-  
+
   @include second-breakpoint {
     margin-left: 20px;
   }
@@ -49,5 +48,4 @@
     min-width: 300px;
     margin-left: 30px;
   }
-  
 }

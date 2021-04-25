@@ -1,17 +1,17 @@
 @mixin first-breakpoint {
-    @media screen and (min-width: 500px){
-        @content;
-    }
+  @media screen and (min-width: 500px) {
+    @content;
+  }
 }
 
 @mixin second-breakpoint {
-    @media screen and (min-width: 800px){
-        @content;
-    }
+  @media screen and (min-width: 800px) {
+    @content;
+  }
 }
 
 @mixin third-breakpoint {
-    @media screen and (min-width: 1050px){
-        @content;
-    }
+  @media screen and (min-width: 1050px) {
+    @content;
+  }
 }

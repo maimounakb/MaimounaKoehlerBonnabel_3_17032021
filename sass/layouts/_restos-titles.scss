@@ -30,15 +30,15 @@
     &--full {
       height: 23px;
       width: 23px;
-      @include heart-full
+      @include heart-full;
     }
 
     &:hover {
       .title-resto__like--empty {
-        @include transition-heart-empty
+        @include transition-heart-empty;
       }
       .title-resto__like--full {
-        @include transition-heart-full
+        @include transition-heart-full;
       }
     }
   }
@@ -80,8 +80,8 @@
 @include first-breakpoint {
   .title-plats {
     &--entree {
-    margin-right: auto;
-  }
+      margin-right: auto;
+    }
     &--plats {
       margin-right: auto;
     }
@@ -94,8 +94,8 @@
 @include second-breakpoint {
   .title-plats {
     &--entree {
-    margin-right: auto;
-  }
+      margin-right: auto;
+    }
     &--plats {
       margin-right: auto;
     }

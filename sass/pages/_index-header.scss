@@ -1,0 +1,63 @@
+/*----------------------*\
+    HEADER DE L'INDEX
+\*----------------------*/
+
+.header-index {
+  text-align: center;
+  &__logo {
+    background-color: white;
+    position: relative;
+    @include flex-center;
+    height: 63px;
+    box-shadow: 0px 3px 3px $color-shadow-tertiary;
+  }
+  &__localisation {
+    @include flex-center;
+    padding-right: 42px;
+    height: 50px;
+    background-color: $color-background-tertiary;
+    font-weight: bold;
+    p {
+      padding-right: 42px;
+    }
+  }
+  &__presentation {
+    padding: 20px 19px 57px 19px;
+    h1 {
+      font-family: "robotomedium";
+      margin: 15px;
+      line-height: 1.7rem;
+      font-size: 1.45rem;
+      @include second-breakpoint {
+        font-size: xx-large;
+      }
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.4rem;
+      font-family: "robotolight";
+    }
+  }
+  &__btn-explorer {
+    width: 215px;
+    @include btn-linear-gradient;
+    margin-top: 32px;
+  }
+}
+
+/*--------------*\
+    FORMULAIRE
+   LOCALISATION
+\*--------------*/
+
+input {
+  position: relative;
+  border: none;
+  background-color: $color-background-tertiary;
+  font-family: "roboto";
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  height: auto;
+  max-width: 7rem;
+}
