@@ -13,8 +13,6 @@
   font-display: block;
 }
 
-/*[class^="icon-"], [class*=" icon-"]*/
-
 .icon-clicker:before,
 .icon-heart-empty:before,
 .icon-heart-full:before,
@@ -97,17 +95,3 @@
 .icon-map-marker-alt:before {
   content: "\6d";
 }
-
-/*
-@font-face {
-  font-family: "icomoon";
-  src: url("../icones/icomoon.eot?4fdal5");
-  src: url("../icones/icomoon.eot?4fdal5#iefix")
-      format("embedded-opentype"),
-    url("../icones/icomoon.ttf?4fdal5") format("truetype"),
-    url("../icones/icomoon.woff?4fdal5") format("woff"),
-    url("../icones/icomoon.svg?4fdal5#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}*/

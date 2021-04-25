@@ -3,19 +3,20 @@
  *
  * BASE
  * General................Styles du body, H1, a, ul.
+ * Icones.................@Fontface et parapètre des icones.
+ * Polices................@Fontface des polices Shrikhand et roboto.
  *
  * UNTILS
  * Variables..............Variables des couleurs.
  * Mixins.................Mixins utiles.
  * Mixins-media-queries...Mixins pour les media queries.
- * Fontions
  *
  * LAYOUTS
  * Containers.............Différents conteneurs (marges réutilisées).
  * Logo...................Caractéristiques du logo.
  * Footer.................Footer commun à toues les pages.
  * Header-restos..........Header des pages des restaurants.
- * Title-resto............Titres des pages restaurants.
+ * Titles-resto............Titres des pages restaurants.
  * Main-restos............Main des pages restaurants.
  *
  * COMPONENTS
@@ -33,7 +34,6 @@
 @import "./untils/variables.scss";
 @import "./untils/mixins.scss";
 @import "./untils/mixins-media-queries.scss";
-@import "./untils/functions.scss";
 
 @import "./base/general.scss";
 

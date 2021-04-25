@@ -24,7 +24,6 @@
   }
   &__button-new {
     font-family: "robotomedium";
-    /*font-weight: bold;*/
     font-size: 0.843rem;
     @include flex-center;
     height: 30px;
@@ -64,11 +63,10 @@
   }
 
   @include first-breakpoint {
-    /*min-width: 335px;*/
     max-width: 500px;
   }
 
-  @include fourth-breakpoint {
+  @include second-breakpoint {
     min-width: 335px;
     width: 48%;
     max-width: none;

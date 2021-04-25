@@ -3,136 +3,144 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="./public/css/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ohmyfood</title>
   </head>
 
   <body>
     <div class="page-accueil">
-    <header class="header-index">
-      <div class="header-index__logo">
-        <img class="logo" src="public/images/logo/ohmyfood@2x.svg" alt="logo" />
-      </div>
-      <form method="post" action="traitement.php" class="header-index__localisation">
-        <label for="localisation" class="icon-map-marker-alt"></label>
-        <input type="text" name="localisation" id="localisation" value="Paris, Belleville"/>
-      </form>
-      <div class="header-index__presentation">
-        <h1>Réservez le menu qui<br/> vous convient</h1>
-        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-        <a href="#restaurants" class="header-index__btn-explorer">Explorer nos restaurants</a>
-      </div>
-    </header>
+      <header class="header-index">
+        <div class="header-index__logo">
+          <img class="logo" src="public/images/logo/ohmyfood@2x.svg" alt="logo"/>
+        </div>
+        <form method="post" action="traitement.php" class="header-index__localisation" >
+          <label for="localisation" class="icon-map-marker-alt"></label>
+          <input type="text" name="localisation" id="localisation" value="Paris, Belleville" />
+        </form>
+        <div class="header-index__presentation">
+          <h1>Réservez le menu qui<br />vous convient</h1>
+          <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+          <a href="#restaurants" class="header-index__btn-explorer">Explorer nos restaurants</a>
+        </div>
+      </header>
 
-    <main>
-      <section class="fonctionnement container-index">
-        <div class="container">
-          <h2 class="fonctionnement__title">Fonctionnement</h2>
-          <div class="fonctionnement__buttons">
-            <div class="f-btn">
+      <main>
+        <section class="fonctionnement container-index">
+          <div class="container">
+            <h2 class="fonctionnement__title">Fonctionnement</h2>
+            <div class="fonctionnement__buttons">
+              <div class="f-btn">
                 <p class="f-btn__number">1</p>
                 <div class="f-btn__icon icon-mobile-alt"></div>
                 <h3 class="f-btn__title">Choisissez un restaurant</h3>
-            </div>
-            <div class="f-btn">
+              </div>
+              <div class="f-btn">
                 <p class="f-btn__number">2</p>
                 <div class="f-btn__icon icon-list-ul"></div>
                 <h3 class="f-btn__title">Composez votre menu</h3>
-            </div>
-            <div class="f-btn">
+              </div>
+              <div class="f-btn">
                 <p class="f-btn__number">3</p>
                 <div class="f-btn__icon icon-store"></div>
                 <h3 class="f-btn__title">Dégustez au restaurant</h3>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="restaurants" class="container restaurants container-index">
-        <h2 class="restaurants__title">Restaurants</h2>
-        <div class="restaurants__articles">
-          <article class="resto-prev">
-            <a href="palette.html">
-              <div class="resto-prev__illu resto-prev--palette">
-                <div class="resto-prev__button-new">Nouveau</div>
-              </div>
-              <div class="resto-prev__description resto-description">
-                <div class="resto-description__text">
-                  <h3>La palette du goût</h3>
-                  <p>Ménilmontant</p>
+        <section id="restaurants" class="container restaurants container-index">
+          <h2 class="restaurants__title">Restaurants</h2>
+          <div class="restaurants__articles">
+            <article class="resto-prev">
+              <a href="palette.html">
+                <div class="resto-prev__illu resto-prev--palette">
+                  <div class="resto-prev__button-new">Nouveau</div>
                 </div>
-                <div class="resto-description__like">
-                  <div class="resto-description__like--empty icon-heart-full"></div>
-                  <div class="resto-description__like--full icon-heart-full"></div>
+                <div class="resto-prev__description resto-description">
+                  <div class="resto-description__text">
+                    <h3>La palette du goût</h3>
+                    <p>Ménilmontant</p>
+                  </div>
+                  <div class="resto-description__like">
+                    <div class="resto-description__like--empty icon-heart-full"></div>
+                    <div class="resto-description__like--full icon-heart-full"></div>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </article>
+              </a>
+            </article>
 
-          <article class="resto-prev">
-            <a href="enchantee.html">
-              <div class="resto-prev__illu resto-prev--enchantee">
-                <div class="resto-prev__button-new">Nouveau</div>
-              </div>
-              <div class="resto-prev__description resto-description">
-                <div class="resto-description__text">
-                  <h3>La note enchantée</h3>
-                  <p>Charonne</p>
+            <article class="resto-prev">
+              <a href="enchantee.html">
+                <div class="resto-prev__illu resto-prev--enchantee">
+                  <div class="resto-prev__button-new">Nouveau</div>
                 </div>
-                <div class="resto-description__like">
-                  <div class="resto-description__like--empty icon-heart-full"></div>
-                  <div class="resto-description__like--full icon-heart-full"></div>
+                <div class="resto-prev__description resto-description">
+                  <div class="resto-description__text">
+                    <h3>La note enchantée</h3>
+                    <p>Charonne</p>
+                  </div>
+                  <div class="resto-description__like">
+                    <div class="resto-description__like--empty icon-heart-full"></div>
+                    <div class="resto-description__like--full icon-heart-full"></div>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </article>
+              </a>
+            </article>
 
-          <article class="resto-prev">
-            <a href="francaise.html">
-              <div class="resto-prev__illu resto-prev--francaise"></div>
-              <div class="resto-prev__description resto-description">
-                <div class="resto-description__text">
-                  <h3>À la française</h3>
-                  <p>Cité Rouge</p>
+            <article class="resto-prev">
+              <a href="francaise.html">
+                <div class="resto-prev__illu resto-prev--francaise"></div>
+                <div class="resto-prev__description resto-description">
+                  <div class="resto-description__text">
+                    <h3>À la française</h3>
+                    <p>Cité Rouge</p>
+                  </div>
+                  <div class="resto-description__like">
+                    <div class="resto-description__like--empty icon-heart-full"></div>
+                    <div class="resto-description__like--full icon-heart-full"></div>
+                  </div>
                 </div>
-                <div class="resto-description__like">
-                  <div class="resto-description__like--empty icon-heart-full"></div>
-                  <div class="resto-description__like--full icon-heart-full"></div>
-                </div>
-              </div>
-            </a>
-          </article>
+              </a>
+            </article>
 
-          <article class="resto-prev">
-            <a href="delice.html">
-              <div class="resto-prev__illu resto-prev--delice"></div>
-              <div class="resto-prev__description resto-description">
-                <div class="resto-description__text">
-                  <h3>Le délice des sens</h3>
-                  <p>Folie-Méricourt</p>
+            <article class="resto-prev">
+              <a href="delice.html">
+                <div class="resto-prev__illu resto-prev--delice"></div>
+                <div class="resto-prev__description resto-description">
+                  <div class="resto-description__text">
+                    <h3>Le délice des sens</h3>
+                    <p>Folie-Méricourt</p>
+                  </div>
+                  <div class="resto-description__like">
+                    <div class="resto-description__like--empty icon-heart-full"></div>
+                    <div class="resto-description__like--full icon-heart-full"></div>
+                  </div>
                 </div>
-                <div class="resto-description__like">
-                  <div class="resto-description__like--empty icon-heart-full"></div>
-                  <div class="resto-description__like--full icon-heart-full"></div>
-                </div>
-              </div>
-            </a>
-          </article>
-        </div>
-      </section>
-    </main>
+              </a>
+            </article>
+          </div>
+        </section>
+      </main>
 
-    <footer class="footer container-footer">
-      <nav class="container nav-footer">
-        <h2 class="nav-footer__title">ohmyfood</h2>
-        <ul>
-          <li><a href="#" class="nav-footer__link icon-utensils">Proposer un restaurant</a></li>
-          <li><a href="#" class="nav-footer__link icon-hands-helping">Devenir partenaire</a></li>
-          <li><a href="#" class="nav-footer__link ">Mentions légales</a></li>
-          <li><a href="mailto:ohmyfood@#.com" class="nav-footer__link">Contact</a></li>
-        </ul>
-      </nav>
-    </footer>
+      <footer class="footer container-footer">
+        <nav class="container nav-footer">
+          <h2 class="nav-footer__title">ohmyfood</h2>
+          <ul>
+            <li>
+              <a href="#" class="nav-footer__link icon-utensils">Proposer un restaurant</a>
+            </li>
+            <li>
+              <a href="#" class="nav-footer__link icon-hands-helping">Devenir partenaire</a>
+            </li>
+            <li>
+              <a href="#" class="nav-footer__link">Mentions légales</a>
+            </li>
+            <li>
+              <a href="mailto:ohmyfood@#.com" class="nav-footer__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
     </div>
 
     <div class="loading-accueil">

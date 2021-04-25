@@ -75,7 +75,7 @@
       margin: 15px;
       line-height: 1.7rem;
       font-size: 1.45rem;
-      @include fourth-breakpoint {
+      @include second-breakpoint {
         font-size: xx-large;
       }
     }
@@ -120,7 +120,7 @@ input {
     margin-bottom: 25px;
     font-family: 'roboto';
     font-size: 1.5rem;
-    @include fourth-breakpoint {
+    @include second-breakpoint {
       font-size: 1.8rem;
       text-align: center;
       margin-left: auto;
@@ -128,11 +128,11 @@ input {
     }
   }
   &__buttons {
-    @include first-breakpoint {
+    @include second-breakpoint {
       @include flex-center;
       flex-direction: column;
     }
-    @include fifth-breakpoint {
+    @include second-breakpoint {
       flex-direction: row;
       flex-wrap: wrap;
     }
@@ -150,12 +150,8 @@ input {
     margin-top: 35px;
     margin-bottom: 27px;
     line-height: 100%;
-    /*
-    @include first-breakpoint{
-      margin-left: 50px;
-    }*/
-    @include fourth-breakpoint {
-      /*margin-left: 0px;*/
+
+    @include second-breakpoint {
       font-size: 1.8rem;
     }
   }
@@ -163,7 +159,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include fourth-breakpoint {
+    @include second-breakpoint {
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;

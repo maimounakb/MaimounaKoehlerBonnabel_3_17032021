@@ -4,19 +4,20 @@
  *
  * BASE
  * General................Styles du body, H1, a, ul.
+ * Icones.................@Fontface et parapètre des icones.
+ * Polices................@Fontface des polices Shrikhand et roboto.
  *
  * UNTILS
  * Variables..............Variables des couleurs.
  * Mixins.................Mixins utiles.
  * Mixins-media-queries...Mixins pour les media queries.
- * Fontions
  *
  * LAYOUTS
  * Containers.............Différents conteneurs (marges réutilisées).
  * Logo...................Caractéristiques du logo.
  * Footer.................Footer commun à toues les pages.
  * Header-restos..........Header des pages des restaurants.
- * Title-resto............Titres des pages restaurants.
+ * Titles-resto............Titres des pages restaurants.
  * Main-restos............Main des pages restaurants.
  *
  * COMPONENTS
@@ -120,7 +121,6 @@
   font-style: normal;
   font-display: block;
 }
-/*[class^="icon-"], [class*=" icon-"]*/
 .icon-clicker:before,
 .icon-heart-empty:before,
 .icon-heart-full:before,
@@ -215,19 +215,6 @@
   content: "m";
 }
 
-/*
-@font-face {
-  font-family: "icomoon";
-  src: url("../icones/icomoon.eot?4fdal5");
-  src: url("../icones/icomoon.eot?4fdal5#iefix")
-      format("embedded-opentype"),
-    url("../icones/icomoon.ttf?4fdal5") format("truetype"),
-    url("../icones/icomoon.woff?4fdal5") format("woff"),
-    url("../icones/icomoon.svg?4fdal5#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}*/
 /*---------------------------*\
     #VARIABLES COULEURS
     IDENTITE GRAPHIQUE
@@ -342,7 +329,6 @@ ul {
 }
 .resto-prev__button-new {
   font-family: "robotomedium";
-  /*font-weight: bold;*/
   font-size: 0.843rem;
   display: flex;
   justify-content: center;
@@ -384,7 +370,6 @@ ul {
 }
 @media screen and (min-width: 500px) {
   .resto-prev {
-    /*min-width: 335px;*/
     max-width: 500px;
   }
 }
@@ -516,7 +501,7 @@ ul {
 \*------------------------------*/
 .icon-check-circle:before {
   color: white;
-  font-size: large;
+  font-size: 1.3rem;
 }
 
 .r-btn {
@@ -549,11 +534,11 @@ ul {
 }
 .r-btn__price {
   font-size: 0.9rem;
-  padding: 15px 10px 12px 10px;
+  padding: 15px 20px 12px 10px;
   display: flex;
   align-items: flex-end;
   font-weight: bold;
-  transform: translateX(40px);
+  transform: translateX(50px);
   transition: transform 400ms;
 }
 .r-btn__check {
@@ -583,19 +568,16 @@ ul {
 @media screen and (min-width: 500px) {
   .r-btn {
     width: 390px;
-    /*margin-right: 20px;*/
   }
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 800px) {
   .r-btn {
     width: 48%;
-    /*margin-right: 25px;*/
   }
 }
 @media screen and (min-width: 1050px) {
   .r-btn {
     width: 100%;
-    /*margin-right: 0px;*/
   }
 }
 
@@ -783,7 +765,7 @@ input {
     margin-right: auto;
   }
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 800px) {
   .fonctionnement__buttons {
     display: flex;
     justify-content: center;
@@ -791,7 +773,7 @@ input {
     flex-direction: column;
   }
 }
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 800px) {
   .fonctionnement__buttons {
     flex-direction: row;
     flex-wrap: wrap;
@@ -806,14 +788,9 @@ input {
   margin-top: 35px;
   margin-bottom: 27px;
   line-height: 100%;
-  /*
-  @include first-breakpoint{
-    margin-left: 50px;
-  }*/
 }
 @media screen and (min-width: 800px) {
   .restaurants h2 {
-    /*margin-left: 0px;*/
     font-size: 1.8rem;
   }
 }
@@ -922,11 +899,6 @@ input {
   background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
 }
 
-/*
-.icon-arrow-left {
-
-}
-*/
 .logo--resto {
   margin-right: auto;
   margin-left: auto;
@@ -1059,7 +1031,7 @@ input {
     max-width: 398px;
   }
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 800px) {
   .carte-resto {
     max-width: 742px;
   }
@@ -1079,12 +1051,11 @@ input {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 800px) {
   .btn-plats {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap-reverse;
-    /*width: 742px;*/
   }
 }
 @media screen and (min-width: 1050px) {
@@ -1158,6 +1129,12 @@ input {
   font-weight: normal;
   margin-top: 0px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 800px) {
+  .nav-footer__title {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 }
 .nav-footer__title, .nav-footer__link {
   color: white;

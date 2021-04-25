@@ -8,7 +8,7 @@
 
 .nav-footer {
   @include flex-column;
-  @include fourth-breakpoint {
+  @include second-breakpoint {
     flex-direction: row;
   }
   @include first-breakpoint {
@@ -16,7 +16,7 @@
     margin-right: auto;
     margin-left: auto;
   }
-  @include fourth-breakpoint {
+  @include second-breakpoint {
     max-width: 1200px;
   }
   &__title {
@@ -25,6 +25,10 @@
     font-weight: normal;
     margin-top: 0px;
     margin-bottom: 20px;
+    @include second-breakpoint {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
   }
   &__title,
   &__link {
@@ -37,7 +41,7 @@
     @include first-breakpoint {
       width: 50%;
     }
-    @include fourth-breakpoint {
+    @include second-breakpoint {
       width: auto;
       margin-top: auto;
       margin-bottom: auto;
@@ -50,7 +54,7 @@
       flex-direction: row;
       flex-wrap: wrap;
     }
-    @include fourth-breakpoint {
+    @include second-breakpoint {
       margin-left: 1.3rem;
       flex-direction: row;
       justify-content: space-around;
