@@ -5,15 +5,15 @@
 .fonctionnement {
   background-color: $color-txt-secondary;
   &__title {
-    margin-top: 25px;
-    margin-bottom: 25px;
     font-family: "roboto";
     font-size: 1.5rem;
+    max-width: 500px;
+    margin: 25px auto;
+    @include first-breakpoint {
+      text-align: center;
+    }
     @include second-breakpoint {
       font-size: 1.8rem;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
     }
   }
   &__buttons {
@@ -38,9 +38,13 @@
     margin-top: 35px;
     margin-bottom: 27px;
     line-height: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 
     @include second-breakpoint {
       font-size: 1.8rem;
+      max-width: none;
     }
   }
   &__articles {
