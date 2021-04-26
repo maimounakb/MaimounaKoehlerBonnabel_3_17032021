@@ -520,10 +520,6 @@ ul {
   width: 75px;
   overflow: hidden;
 }
-.r-btn .icon-check-circle:before {
-  transform: rotate(0deg);
-  transition: all 500ms;
-}
 .r-btn:hover .r-btn__price, .r-btn:active .r-btn__price {
   transform: translateX(0);
 }
@@ -532,7 +528,7 @@ ul {
   transform: translateX(0px);
 }
 .r-btn:hover .icon-check-circle:before, .r-btn:active .icon-check-circle:before {
-  transform: rotate(2turn);
+  animation: rotate-check 500ms backwards;
 }
 @media screen and (min-width: 500px) {
   .r-btn {
@@ -575,6 +571,7 @@ ul {
 /*---------------------------*\
       #ANIMATION DES BTN
       (PAGES RESTAURANTS)
+        AU CHARGEMENT
 \*---------------------------*/
 @keyframes loading-btn {
   0% {
@@ -584,6 +581,19 @@ ul {
   100% {
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+/*---------------------------*\
+      #ANIMATION DES BTN
+      (PAGES RESTAURANTS)
+          AU SURVOL
+\*---------------------------*/
+@keyframes rotate-check {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(2turn);
   }
 }
 /*---------------------*\

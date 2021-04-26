@@ -57,11 +57,6 @@
     overflow: hidden;
   }
 
-  .icon-check-circle:before {
-    transform: rotate(0deg);
-    transition: all 500ms;
-  }
-
   &:hover,
   &:active {
     .r-btn__price {
@@ -72,7 +67,7 @@
       transform: translateX(0px);
     }
     .icon-check-circle:before {
-      transform: rotate(2turn);
+      animation: rotate-check 500ms backwards;
     }
   }
 
@@ -100,6 +95,7 @@
 /*---------------------------*\
       #ANIMATION DES BTN
       (PAGES RESTAURANTS)
+        AU CHARGEMENT
 \*---------------------------*/
 
 @keyframes loading-btn {
@@ -110,5 +106,20 @@
   100% {
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+
+/*---------------------------*\
+      #ANIMATION DES BTN
+      (PAGES RESTAURANTS)
+          AU SURVOL
+\*---------------------------*/
+
+@keyframes rotate-check {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(2turn);
   }
 }
