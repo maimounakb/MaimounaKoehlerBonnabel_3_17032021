@@ -237,6 +237,10 @@
 /*------------------*\
     STYLE GENERAL
 \*------------------*/
+body, html {
+  height: 100%;
+}
+
 body {
   font-family: "roboto";
   background-color: #f6f6f6;
@@ -794,6 +798,12 @@ input {
 /*--------------*\
     CONTENEURS
 \*--------------*/
+.page-restaurant, .page-accueil {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   max-width: 1200px;
   margin-right: auto;
@@ -1083,6 +1093,8 @@ input {
 \*-------------*/
 .footer {
   background-color: #2e2d2d;
+  margin-top: auto;
+  margin-bottom: 0px;
 }
 
 .nav-footer {
