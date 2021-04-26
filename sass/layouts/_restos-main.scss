@@ -52,16 +52,16 @@
   justify-content: space-between;
   padding: 10px 0px 12px 10px;
   overflow: hidden;
-  h3 {
+  &__title-plat {
     margin: 0px;
     margin-bottom: 3px;
     font-size: 1.1rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
-  &--title-first-line {
-    margin-bottom: 0px;
+    &--title-first-line {
+      margin: 0px;
+    }
   }
   p {
     font-family: "robotolight";
