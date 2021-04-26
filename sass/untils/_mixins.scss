@@ -106,7 +106,6 @@
 @mixin transition-heart-full {
   opacity: 1;
   @include background-gradient;
-  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
